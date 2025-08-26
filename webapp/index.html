@@ -6,77 +6,16 @@
     <title>Análisis de Letras de Canciones</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Vue.js CDN -->
-    <!-- URL para importaciones de módulos ES -->
-    <script type="importmap">
-    {
-      "imports": {
-        "vue": "https://unpkg.com/vue@3/dist/vue.esm-browser.prod.js"
-      }
-    }
-    </script>
     <!-- Link to external CSS file -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Vue.js and Vue Router (Global Builds) -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://unpkg.com/vue-router@4/dist/vue-router.global.js"></script>
 </head>
-<body class="bg-gray-100 font-sans text-gray-800 antialiased p-4 sm:p-6 md:p-8">
-    <div id="app" class="max-w-7xl mx-auto bg-white shadow-lg rounded-xl p-6 sm:p-8 md:p-10">
-        <!-- Título y Subtítulo -->
-        <header class="text-center mb-8">
-            <h1 class="text-4xl sm:text-5xl font-extrabold text-indigo-700 mb-2">Análisis de Letras de Canciones</h1>
-            <p class="text-xl sm:text-2xl text-gray-600">Exploración de patrones léxicos y generaciones con IA</p>
-        </header>
-
-        <!-- Selector de Artista y Navegación de Pestañas -->
-        <section class="mb-8 flex flex-col sm:flex-row items-center justify-between space-y-4 sm:space-y-0 sm:space-x-4">
-            <div class="w-full sm:w-auto flex-grow">
-                <label for="artist-select" class="block text-lg font-semibold text-gray-700 mb-2">Selecciona un Artista:</label>
-                <select id="artist-select" v-model="selectedArtist"
-                        class="block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-indigo-500 focus:border-indigo-500 text-lg bg-white">
-                    <option v-for="artistName in artists" :key="artistName" :value="artistName">
-                        {{ artistName }}
-                    </option>
-                </select>
-            </div>
-            <tab-navigation :active-tab="activeTab" @update:active-tab="activeTab = $event"></tab-navigation>
-        </section>
-
-        <!-- Contenido Principal: Pestaña de Artista -->
-        <div v-if="activeTab === 'artist'">
-            <div v-if="selectedArtistData" class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                <artist-stats-panel :artist-name="selectedArtist" :stats="selectedArtistData.stats"></artist-stats-panel>
-                <words-table
-                    :words="selectedArtistData.words"
-                    :artist-name="selectedArtist"
-                    v-model:words-to-show="wordsToShowCount"
-                ></words-table>
-            </div>
-            <generations-viewer
-                v-if="selectedArtistData"
-                :generations="selectedArtistData.generations"
-                :frequent-words="selectedArtistData.words"
-                :artist-name="selectedArtist"
-            ></generations-viewer>
-        </div>
-
-        <!-- Contenido Principal: Pestaña de Estadísticas Globales -->
-        <div v-if="activeTab === 'global'">
-            <div class="bg-gray-50 p-6 rounded-lg shadow-inner border border-gray-200">
-                <h2 class="text-2xl font-bold text-indigo-600 mb-6">Estadísticas Globales por Artista</h2>
-                <global-stats-table :stats="globalArtistStats"></global-stats-table>
-                <global-frequent-words-table :words-by-artist="globalFrequentWords"></global-frequent-words-table>
-            </div>
-        </div>
-
-        <!-- Contenido Principal: Pestaña de Explorar Dataset -->
-        <div v-if="activeTab === 'dataset'">
-             <dataset-explorer :songs="artistSongs" :loading="datasetLoading" :error="datasetError"></dataset-explorer>
-        </div>
-
-
-        <!-- Mensajes de carga y error -->
-        <div v-if="loading" class="text-center text-indigo-600 text-xl font-semibold mt-8">Cargando datos...</div>
-        <div v-if="error" class="text-center text-red-600 text-xl font-semibold mt-8">Error al cargar los datos: {{ error }}</div>
-    </div>
+<body class="bg-gray-100 font-sans text-gray-800 antialiased">
+    <!-- La aplicación Vue se montará aquí -->
+    <div id="app"></div>
 
     <!-- Cargar el script principal como un módulo -->
     <script type="module" src="main.js"></script>

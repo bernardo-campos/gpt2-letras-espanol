@@ -1,10 +1,19 @@
-import { ref, computed, watch } from 'vue';
+// Vue está disponible globalmente
+const { ref, computed, watch, onMounted } = Vue;
 
 export default {
-    props: ['generations', 'frequentWords', 'artistName'],
+    props: ['generations', 'frequentWords', 'artistName', 'initialGenerationId'],
     setup(props) {
         const currentGenerationIndex = ref(0);
         const selectedFrequentWords = ref([]);
+
+        const setGenerationById = (id) => {
+            if (!id || !props.generations) return;
+            const index = props.generations.findIndex(gen => gen.id === id);
+            if (index !== -1) {
+                currentGenerationIndex.value = index;
+            }
+        };
 
         const currentGeneration = computed(() => {
             if (!props.generations || props.generations.length === 0) {
@@ -42,6 +51,14 @@ export default {
         watch(() => props.artistName, () => {
             currentGenerationIndex.value = 0;
             selectedFrequentWords.value = [];
+        });
+
+        watch(() => props.initialGenerationId, (newId) => {
+            setGenerationById(newId);
+        });
+
+        onMounted(() => {
+             setGenerationById(props.initialGenerationId);
         });
 
         return { currentGenerationIndex, selectedFrequentWords, currentGeneration, mostFrequentWordsForHighlight, highlightText, toggleWordSelection, prevGeneration, nextGeneration };

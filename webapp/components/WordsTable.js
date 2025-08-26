@@ -1,4 +1,5 @@
-import { computed } from 'vue';
+// Vue está disponible globalmente
+const { computed } = Vue;
 
 export default {
     props: ['words', 'artistName', 'wordsToShow'],

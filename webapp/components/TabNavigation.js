@@ -1,23 +1,22 @@
 export default {
-    props: ['activeTab'],
-    emits: ['update:activeTab'],
+    props: ['activeTab', 'artistSlug'],
     template: `
         <div class="w-full sm:w-auto flex-shrink-0 flex space-x-2 bg-gray-200 rounded-lg p-1">
-            <button @click="$emit('update:activeTab', 'artist')"
-                    :class="{'bg-indigo-600 text-white shadow-md': activeTab === 'artist', 'bg-white text-gray-700': activeTab !== 'artist'}"
-                    class="flex-1 px-4 py-2 rounded-md text-base font-medium transition-colors duration-200">
-                Estadísticas del Artista
-            </button>
-            <button @click="$emit('update:activeTab', 'global')"
-                    :class="{'bg-indigo-600 text-white shadow-md': activeTab === 'global', 'bg-white text-gray-700': activeTab !== 'global'}"
-                    class="flex-1 px-4 py-2 rounded-md text-base font-medium transition-colors duration-200">
-                Estadísticas Globales
-            </button>
-            <button @click="$emit('update:activeTab', 'dataset')"
-                    :class="{'bg-indigo-600 text-white shadow-md': activeTab === 'dataset', 'bg-white text-gray-700': activeTab !== 'dataset'}"
-                    class="flex-1 px-4 py-2 rounded-md text-base font-medium transition-colors duration-200">
-                Explorar Dataset
-            </button>
+            <router-link :to="{ name: 'estadisticas', params: { slug: artistSlug } }"
+               :class="{'bg-indigo-600 text-white shadow-md': activeTab === 'estadisticas', 'bg-white text-gray-700': activeTab !== 'estadisticas'}"
+               class="flex-1 block text-center px-4 py-2 rounded-md text-base font-medium transition-colors duration-200 no-underline">
+                Estadísticas
+            </router-link>
+            <router-link :to="{ name: 'estadisticas-globales' }"
+               :class="{'bg-indigo-600 text-white shadow-md': activeTab === 'estadisticas-globales', 'bg-white text-gray-700': activeTab !== 'estadisticas-globales'}"
+               class="flex-1 block text-center px-4 py-2 rounded-md text-base font-medium transition-colors duration-200 no-underline">
+                Globales
+            </router-link>
+            <router-link :to="{ name: 'dataset', params: { slug: artistSlug } }"
+               :class="{'bg-indigo-600 text-white shadow-md': activeTab === 'dataset', 'bg-white text-gray-700': activeTab !== 'dataset'}"
+               class="flex-1 block text-center px-4 py-2 rounded-md text-base font-medium transition-colors duration-200 no-underline">
+                Dataset
+            </router-link>
         </div>
     `
 };

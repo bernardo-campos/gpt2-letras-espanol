@@ -1,17 +1,23 @@
-import { ref, computed, watch } from 'vue';
+// Vue está disponible globalmente
+const { ref, computed, watch, onMounted } = Vue;
 
 export default {
     props: {
-        songs: {
-            type: Array,
-            default: () => []
-        },
+        songs: { type: Array, default: () => [] },
         loading: Boolean,
-        error: String
+        error: String,
+        initialSongIndex: { type: Number, default: null }
     },
     setup(props) {
         const searchTerm = ref('');
         const currentSongIndex = ref(null);
+
+        const setSongByIndex = (index) => {
+            const targetIndex = index - 1;
+            if (targetIndex >= 0 && targetIndex < props.songs.length) {
+                currentSongIndex.value = targetIndex;
+            }
+        };
 
         const filteredSongs = computed(() => {
             if (!searchTerm.value) {
@@ -31,7 +37,12 @@ export default {
 
         const formattedLyric = computed(() => {
             if (!currentSong.value) return '';
-            return currentSong.value.lyric.replace(/\n/g, '<br>');
+            let lyric = currentSong.value.lyric.replace(/\n/g, '<br>');
+            if (searchTerm.value) {
+                 const regex = new RegExp(`(${searchTerm.value})`, 'gi');
+                 lyric = lyric.replace(regex, '<span class="highlight">$1</span>');
+            }
+            return lyric;
         });
 
         const selectSong = (originalIndex) => {
@@ -39,15 +50,11 @@ export default {
         };
 
         const prevSong = () => {
-            if (currentSongIndex.value > 0) {
-                currentSongIndex.value--;
-            }
+            if (currentSongIndex.value > 0) currentSongIndex.value--;
         };
 
         const nextSong = () => {
-            if (currentSongIndex.value < props.songs.length - 1) {
-                currentSongIndex.value++;
-            }
+            if (currentSongIndex.value < props.songs.length - 1) currentSongIndex.value++;
         };
 
         const getSnippet = (lyric) => {
@@ -55,36 +62,37 @@ export default {
             const lowerCaseLyric = lyric.toLowerCase();
             const lowerCaseSearch = searchTerm.value.toLowerCase();
             const index = lowerCaseLyric.indexOf(lowerCaseSearch);
-
             if (index === -1) return '';
-
             const start = Math.max(0, index - 30);
             const end = Math.min(lyric.length, index + searchTerm.value.length + 30);
-
             let snippet = lyric.substring(start, end);
             const regex = new RegExp(`(${searchTerm.value})`, 'gi');
             snippet = snippet.replace(regex, '<span class="highlight">$1</span>');
-
             return `...${snippet}...`;
         };
 
-        watch(() => props.songs, () => {
-             currentSongIndex.value = props.songs.length > 0 ? 0 : null;
+        watch(() => props.songs, (newSongs) => {
              searchTerm.value = '';
+             if (props.initialSongIndex) {
+                 setSongByIndex(props.initialSongIndex);
+             } else {
+                 currentSongIndex.value = newSongs.length > 0 ? 0 : null;
+             }
         });
 
+        watch(() => props.initialSongIndex, (newIndex) => {
+            if (newIndex) setSongByIndex(newIndex);
+        });
 
-        return {
-            searchTerm,
-            filteredSongs,
-            currentSongIndex,
-            currentSong,
-            formattedLyric,
-            selectSong,
-            prevSong,
-            nextSong,
-            getSnippet
-        };
+        onMounted(() => {
+            if (props.initialSongIndex) {
+                 setSongByIndex(props.initialSongIndex);
+            } else if (props.songs.length > 0) {
+                 currentSongIndex.value = 0;
+            }
+        });
+
+        return { searchTerm, filteredSongs, currentSongIndex, currentSong, formattedLyric, selectSong, prevSong, nextSong, getSnippet };
     },
     template: `
         <div class="bg-gray-50 p-6 rounded-lg shadow-inner border border-gray-200">

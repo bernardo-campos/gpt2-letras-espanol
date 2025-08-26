@@ -1,5 +1,6 @@
 {
   "Mercedes Sosa": {
+    "slug": "mercedes-sosa",
     "url_dataset": "dataset/01-mercedes-sosa-534.json",
     "words": [
       {
@@ -211,10 +212,10 @@
     },
     "generations": [
 	  {
-		"id": "0b1956eee8b96c346893263888c44d41",
-        "title": "Mercedes Sosa",
-        "text": "Ya no me quedan ganas de seguir\nlas calles ya se han deshojado.\nya no hay ni rastro del sol.\nya nada me importa ya\nno te sigo.\nya todo fue olvido\ny solo queda mi dolor.\nya me siento perdido.\nya ya todo es olvido.\nya sé que jamás volverá,\nme va demasiado mal.\nya lo estoy comprendiendo.\nya nunca más te tendré.\nya olvidé tu sonrisa y el miedo,\nque pasó la eternidad.\nya sabré que nunca podrás volver,\npero en el fondo yo estaré.\nya sabrás que siempre fuiste para mí un juego\nay, qué lindo es poderte olvidar.\nya sabrán como me voy volviendo loco.<eos>"
-	  },
+  		"id": "0b1956eee8b96c346893263888c44d41",
+          "title": "Mercedes Sosa",
+          "text": "Ya no me quedan ganas de seguir\nlas calles ya se han deshojado.\nya no hay ni rastro del sol.\nya nada me importa ya\nno te sigo.\nya todo fue olvido\ny solo queda mi dolor.\nya me siento perdido.\nya ya todo es olvido.\nya sé que jamás volverá,\nme va demasiado mal.\nya lo estoy comprendiendo.\nya nunca más te tendré.\nya olvidé tu sonrisa y el miedo,\nque pasó la eternidad.\nya sabré que nunca podrás volver,\npero en el fondo yo estaré.\nya sabrás que siempre fuiste para mí un juego\nay, qué lindo es poderte olvidar.\nya sabrán como me voy volviendo loco.<eos>"
+  	  },
       {
         "id": "0b1956eee8b96c346893263888c44d40",
         "title": "Mercedes Sosa",
@@ -288,6 +289,7 @@
     ]
   },
   "La Barra": {
+    "slug": "la-barra",
     "url_dataset": "dataset/02-la-barra-528.json",
     "words": [
       {
@@ -576,6 +578,7 @@
     ]
   },
   "Juan Gabriel": {
+    "slug": "juan-gabriel",
     "url_dataset": "dataset/03-juan-gabriel-492.json",
     "words": [
       {
@@ -864,6 +867,7 @@
     ]
   },
   "Raphael": {
+    "slug": "raphael",
     "url_dataset": "dataset/04-raphael-489.json",
     "words": [
       {
@@ -1152,6 +1156,7 @@
     ]
   },
   "Palito Ortega": {
+    "slug": "palito-ortega",
     "url_dataset": "dataset/05-palito-ortega-484.json",
     "words": [
       {
@@ -1440,6 +1445,7 @@
     ]
   },
   "Los Palmeras": {
+    "slug": "los-palmeras",
     "url_dataset": "dataset/06-los-palmeras-472.json",
     "words": [
       {
@@ -1728,6 +1734,7 @@
     ]
   },
   "Los Chalchaleros": {
+    "slug": "los-chalchaleros",
     "url_dataset": "dataset/07-los-chalchaleros-449.json",
     "words": [
       {
@@ -2016,6 +2023,7 @@
     ]
   },
   "Leo Dan": {
+    "slug": "leo-dan",
     "url_dataset": "dataset/08-leo-dan-453.json",
     "words": [
       {
@@ -2304,6 +2312,7 @@
     ]
   },
   "Andrés Calamaro": {
+    "slug": "andres-calamaro",
     "url_dataset": "dataset/09-andres-calamaro-455.json",
     "words": [
       {
@@ -2592,6 +2601,7 @@
     ]
   },
   "Litto Nebbia": {
+    "slug": "litto-nebbia",
     "url_dataset": "dataset/10-litto-nebbia-438.json",
     "words": [
       {
@@ -2880,6 +2890,7 @@
     ]
   },
   "Sabroso": {
+    "slug": "sabroso",
     "url_dataset": "dataset/11-sabroso-458.json",
     "words": [
       {
@@ -3168,6 +3179,7 @@
     ]
   },
   "Pablo Milanés": {
+    "slug": "pablo-milanes",
     "url_dataset": "dataset/12-pablo-milanes-402.json",
     "words": [
       {
@@ -3456,6 +3468,7 @@
     ]
   },
   "Sandro": {
+    "slug": "sandro",
     "url_dataset": "dataset/13-sandro-398.json",
     "words": [
       {
@@ -3744,6 +3757,7 @@
     ]
   },
   "Horacio Guarany": {
+    "slug": "horacio-guarany",
     "url_dataset": "dataset/14-horacio-guarany-413.json",
     "words": [
       {
@@ -4032,6 +4046,7 @@
     ]
   },
   "Rocío Dúrcal": {
+    "slug": "rocio-durcal",
     "url_dataset": "dataset/15-rocio-durcal-382.json",
     "words": [
       {
@@ -4320,6 +4335,7 @@
     ]
   },
   "Víctor Heredia": {
+    "slug": "victor-heredia",
     "url_dataset": "dataset/16-victor-heredia-396.json",
     "words": [
       {
@@ -4608,6 +4624,7 @@
     ]
   },
   "Ulises Bueno": {
+    "slug": "ulises-bueno",
     "url_dataset": "dataset/17-ulises-bueno-385.json",
     "words": [
       {
@@ -4896,6 +4913,7 @@
     ]
   },
   "Jairo": {
+    "slug": "jairo",
     "url_dataset": "dataset/18-jairo-353.json",
     "words": [
       {
@@ -5184,6 +5202,7 @@
     ]
   },
   "Fito Páez": {
+    "slug": "fito-paez",
     "url_dataset": "dataset/19-fito-paez-357.json",
     "words": [
       {
@@ -5472,6 +5491,7 @@
     ]
   },
   "Chaqueño Palavecino": {
+    "slug": "chaqueno-palavecino",
     "url_dataset": "dataset/20-chaqueno-palavecino-346.json",
     "words": [
       {
