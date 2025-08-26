@@ -38,9 +38,10 @@ export default {
         };
 
         // --- Computed Properties ---
-        const artists = computed(() => artistData.value ? Object.keys(artistData.value) : []);
+        const artists = computed(() => artistData.value ? Object.keys(artistData.value).sort((a, b) => a.localeCompare(b)) : []);
         const activeTab = computed(() => route.name);
         const selectedArtistSlug = computed(() => getSlug(selectedArtist.value));
+        const showArtistSelector = computed(() => ['estadisticas', 'dataset'].includes(route.name));
 
         // --- Provide data to child routes ---
         provide('artistData', artistData);
@@ -68,19 +69,21 @@ export default {
             selectedArtist,
             activeTab,
             selectedArtistSlug,
-            // Exponer 'route' a la plantilla para que :key="route.fullPath" funcione
-            route
+            route,
+            showArtistSelector
         };
     },
     template: `
         <div class="max-w-7xl mx-auto bg-white shadow-lg rounded-xl p-6 sm:p-8 md:p-10">
-            <header class="text-center mb-8">
-                <h1 class="text-4xl sm:text-5xl font-extrabold text-indigo-700 mb-2">Análisis de Letras de Canciones</h1>
-                <p class="text-xl sm:text-2xl text-gray-600">Exploración de patrones léxicos y generaciones con IA</p>
-            </header>
 
-            <section v-if="!loading" class="mb-8 flex flex-col sm:flex-row items-center justify-between space-y-4 sm:space-y-0 sm:space-x-4">
-                <div class="w-full sm:w-auto flex-grow">
+            <section class="mb-8 flex flex-col sm:flex-row items-center justify-between space-y-4 sm:space-y-0 sm:space-x-4">
+                <!-- Tabs a la izquierda -->
+                <div class="w-full sm:w-auto">
+                     <tab-navigation :active-tab="activeTab" :artist-slug="selectedArtistSlug"></tab-navigation>
+                </div>
+
+                <!-- Selector de Artista a la derecha (condicional) -->
+                <div v-if="showArtistSelector && !loading" class="w-full sm:w-auto flex-grow sm:flex-grow-0 sm:w-72">
                     <label for="artist-select" class="block text-lg font-semibold text-gray-700 mb-2">Selecciona un Artista:</label>
                     <select id="artist-select" v-model="selectedArtist"
                             class="block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-indigo-500 focus:border-indigo-500 text-lg bg-white">
@@ -89,7 +92,6 @@ export default {
                         </option>
                     </select>
                 </div>
-                <tab-navigation :active-tab="activeTab" :artist-slug="selectedArtistSlug"></tab-navigation>
             </section>
 
             <router-view :key="route.fullPath"></router-view>

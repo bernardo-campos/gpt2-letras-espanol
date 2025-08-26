@@ -1,3 +1,4 @@
+import HomeView from './views/HomeView.js';
 import EstadisticasView from './views/EstadisticasView.js';
 import GlobalesView from './views/GlobalesView.js';
 import DatasetView from './views/DatasetView.js';
@@ -8,7 +9,8 @@ const { createRouter, createWebHashHistory } = VueRouter;
 const routes = [
     {
         path: '/',
-        redirect: '/estadisticas'
+        name: 'home',
+        component: HomeView
     },
     {
         path: '/estadisticas/:slug?/:index?',

@@ -9,8 +9,19 @@ export default {
     setup() {
         const artistData = inject('artistData');
 
-        const globalArtistStats = computed(() => artistData.value ? Object.fromEntries(Object.entries(artistData.value).map(([name, data]) => [name, data.stats])) : {});
-        const globalFrequentWords = computed(() => artistData.value ? Object.fromEntries(Object.entries(artistData.value).map(([name, data]) => [name, [...data.words].sort((a, b) => b.count - a.count).slice(0, 5)])) : {});
+        const globalArtistStats = computed(() => {
+            if (!artistData.value) return {};
+            // Ordenar las entradas del objeto por la clave (nombre del artista)
+            const sortedEntries = Object.entries(artistData.value).sort((a, b) => a[0].localeCompare(b[0]));
+            // Crear un nuevo objeto a partir de las entradas ordenadas
+            return Object.fromEntries(sortedEntries.map(([name, data]) => [name, data.stats]));
+        });
+
+        const globalFrequentWords = computed(() => {
+             if (!artistData.value) return {};
+             const sortedEntries = Object.entries(artistData.value).sort((a, b) => a[0].localeCompare(b[0]));
+             return Object.fromEntries(sortedEntries.map(([name, data]) => [name, [...data.words].sort((a, b) => b.count - a.count).slice(0, 5)]));
+        });
 
         return { globalArtistStats, globalFrequentWords };
     },
