@@ -7,7 +7,14 @@
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Vue.js CDN -->
-    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+    <!-- URL para importaciones de módulos ES -->
+    <script type="importmap">
+    {
+      "imports": {
+        "vue": "https://unpkg.com/vue@3/dist/vue.esm-browser.prod.js"
+      }
+    }
+    </script>
     <!-- Link to external CSS file -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -30,178 +37,33 @@
                     </option>
                 </select>
             </div>
-
-            <div class="w-full sm:w-auto flex-shrink-0 flex space-x-2 bg-gray-200 rounded-lg p-1">
-                <button @click="activeTab = 'artist'"
-                        :class="{'bg-indigo-600 text-white shadow-md': activeTab === 'artist', 'bg-white text-gray-700': activeTab !== 'artist'}"
-                        class="flex-1 px-4 py-2 rounded-md text-base font-medium transition-colors duration-200">
-                    Estadísticas del Artista
-                </button>
-                <button @click="activeTab = 'global'"
-                        :class="{'bg-indigo-600 text-white shadow-md': activeTab === 'global', 'bg-white text-gray-700': activeTab !== 'global'}"
-                        class="flex-1 px-4 py-2 rounded-md text-base font-medium transition-colors duration-200">
-                    Estadísticas Globales
-                </button>
-            </div>
+            <tab-navigation :active-tab="activeTab" @update:active-tab="activeTab = $event"></tab-navigation>
         </section>
 
         <!-- Contenido Principal: Pestaña de Artista -->
         <div v-if="activeTab === 'artist'">
             <div v-if="selectedArtistData" class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                <!-- Sección de Estadísticas del Artista -->
-                <div class="lg:col-span-1 bg-gray-50 p-6 rounded-lg shadow-inner border border-gray-200">
-                    <h2 class="text-2xl font-bold text-indigo-600 mb-4">Estadísticas de {{ selectedArtist }}</h2>
-                    <ul class="space-y-2 text-lg text-gray-700">
-                        <li><span class="font-semibold">Palabras Totales:</span> {{ selectedArtistData.stats.totalWords.toLocaleString() }}</li>
-                        <li><span class="font-semibold">Palabras Únicas:</span> {{ selectedArtistData.stats.uniqueWords.toLocaleString() }}</li>
-                        <li><span class="font-semibold">Canciones:</span> {{ selectedArtistData.stats.songs.toLocaleString() }}</li>
-                        <li><span class="font-semibold">Promedio de Palabras por Canción:</span> {{ selectedArtistData.stats.avgWordsPerSong.toFixed(2) }}</li>
-                    </ul>
-                </div>
-
-                <!-- Sección de Listado de Palabras -->
-                <div class="lg:col-span-2 bg-gray-50 p-6 rounded-lg shadow-inner border border-gray-200">
-                    <h2 class="text-2xl font-bold text-indigo-600 mb-4">Palabras Más Frecuentes en el dataset de {{ selectedArtist }}</h2>
-
-                    <!-- Slider para cantidad de palabras -->
-                    <div class="mb-6">
-                        <label for="words-slider" class="block text-lg font-semibold text-gray-700 mb-2">
-                            Mostrar {{ wordsToShowCount }} palabras
-                        </label>
-                        <input type="range" id="words-slider" v-model="wordsToShowCount" min="5" :max="maxWordsSlider" step="5"
-                               class="w-full h-2 bg-gray-300 rounded-lg appearance-none cursor-pointer">
-                    </div>
-
-                    <!-- Tabla de Palabras -->
-                    <div class="overflow-x-auto">
-                        <table class="min-w-full bg-white rounded-lg shadow-md border border-gray-200">
-                            <thead class="bg-gray-100">
-                                <tr>
-                                    <th class="py-3 px-4 text-left text-sm font-medium text-gray-600 uppercase tracking-wider rounded-tl-lg">Palabra</th>
-                                    <th class="py-3 px-4 text-left text-sm font-medium text-gray-600 uppercase tracking-wider">Conteo</th>
-                                    <th class="py-3 px-4 text-left text-sm font-medium text-gray-600 uppercase tracking-wider rounded-tr-lg">Indicador</th>
-                                </tr>
-                            </thead>
-                            <tbody class="divide-y divide-gray-200">
-                                <tr v-for="(word, index) in filteredWords" :key="index" class="hover:bg-gray-50 transition-colors duration-150">
-                                    <td class="py-0 px-4 text-base text-gray-900">{{ word.word }}</td>
-                                    <td class="py-0 px-4 text-base text-gray-700">{{ word.count.toLocaleString() }}</td>
-                                    <td class="py-0 px-4">
-                                        <div class="word-bar" :style="{ width: (word.count / maxWordCount) * 100 + '%' }"></div>
-                                    </td>
-                                </tr>
-                                <tr v-if="filteredWords.length === 0">
-                                    <td colspan="3" class="py-4 px-4 text-center text-gray-500 text-lg">No hay palabras para mostrar.</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+                <artist-stats-panel :artist-name="selectedArtist" :stats="selectedArtistData.stats"></artist-stats-panel>
+                <words-table
+                    :words="selectedArtistData.words"
+                    :artist-name="selectedArtist"
+                    v-model:words-to-show="wordsToShowCount"
+                ></words-table>
             </div>
-
-            <!-- Sección de Generaciones de Texto -->
-            <div class="mt-8 bg-gray-50 p-6 rounded-lg shadow-inner border border-gray-200">
-                <h2 class="text-2xl font-bold text-indigo-600 mb-4">Generaciones con IA para {{ selectedArtist }}</h2>
-
-                <div v-if="selectedArtistData.generations && selectedArtistData.generations.length > 0">
-                    <!-- Palabras frecuentes seleccionables -->
-                    <div class="mb-4 flex flex-wrap gap-2 items-center">
-                        <span class="text-lg font-semibold text-gray-700 mr-2">Palabras para resaltar:</span>
-                        <span v-for="wordObj in mostFrequentWordsForHighlight" :key="wordObj.word"
-                              :class="{'selected-word-tag': selectedFrequentWords.includes(wordObj.word), 'unselected-word-tag': !selectedFrequentWords.includes(wordObj.word)}"
-                              @click="toggleWordSelection(wordObj.word)">
-                            {{ wordObj.word }}
-                        </span>
-                        <span v-if="mostFrequentWordsForHighlight.length === 0" class="text-gray-500 text-sm">
-                            No hay palabras frecuentes para resaltar en esta vista.
-                        </span>
-                    </div>
-
-                    <!-- Contenedor de texto de la generación -->
-                    <div class="bg-white p-6 rounded-lg border border-gray-300 shadow-sm mb-6 max-h-96 overflow-y-auto" style="min-height: min-content;">
-                        <p class="generation-text text-lg text-gray-800" v-html="highlightText(currentGeneration.text)"></p>
-                    </div>
-
-                    <!-- Controles de navegación de generaciones -->
-                    <div class="flex flex-col sm:flex-row items-center justify-between space-y-4 sm:space-y-0 sm:space-x-4">
-                        <button @click="prevGeneration" :disabled="currentGenerationIndex === 0"
-                                class="w-full sm:w-auto px-6 py-3 bg-indigo-500 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-600 transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed">
-                            Anterior
-                        </button>
-
-                        <div class="flex-grow text-center">
-                            <label for="generation-slider" class="block text-lg font-semibold text-gray-700 mb-2">
-                                Generación {{ Number(currentGenerationIndex) + 1 }} de {{ selectedArtistData.generations.length }}
-                            </label>
-                            <input type="range" id="generation-slider" v-model="currentGenerationIndex" min="0" :max="selectedArtistData.generations.length - 1" step="1"
-                                   class="w-full h-2 bg-gray-300 rounded-lg appearance-none cursor-pointer">
-                        </div>
-
-                        <button @click="nextGeneration" :disabled="currentGenerationIndex === selectedArtistData.generations.length - 1"
-                                class="w-full sm:w-auto px-6 py-3 bg-indigo-500 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-600 transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed">
-                            Siguiente
-                        </button>
-                    </div>
-                </div>
-                <div v-else class="text-center text-gray-500 text-lg py-8">
-                    No hay generaciones de texto disponibles para este artista.
-                </div>
-            </div>
+            <generations-viewer
+                v-if="selectedArtistData"
+                :generations="selectedArtistData.generations"
+                :frequent-words="selectedArtistData.words"
+                :artist-name="selectedArtist"
+            ></generations-viewer>
         </div>
 
         <!-- Contenido Principal: Pestaña de Estadísticas Globales -->
         <div v-if="activeTab === 'global'">
             <div class="bg-gray-50 p-6 rounded-lg shadow-inner border border-gray-200">
                 <h2 class="text-2xl font-bold text-indigo-600 mb-6">Estadísticas Globales por Artista</h2>
-
-                <!-- Tabla de Estadísticas Globales -->
-                <div class="mb-8 overflow-x-auto">
-                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Resumen de Estadísticas</h3>
-                    <table class="min-w-full bg-white rounded-lg shadow-md border border-gray-200">
-                        <thead class="bg-gray-100">
-                            <tr>
-                                <th class="py-3 px-4 text-left text-sm font-medium text-gray-600 uppercase tracking-wider rounded-tl-lg">Artista</th>
-                                <th class="py-3 px-4 text-left text-sm font-medium text-gray-600 uppercase tracking-wider">Palabras Totales</th>
-                                <th class="py-3 px-4 text-left text-sm font-medium text-gray-600 uppercase tracking-wider">Palabras Únicas</th>
-                                <th class="py-3 px-4 text-left text-sm font-medium text-gray-600 uppercase tracking-wider">Canciones</th>
-                                <th class="py-3 px-4 text-left text-sm font-medium text-gray-600 uppercase tracking-wider rounded-tr-lg">Palabras/Canción (Promedio)</th>
-                            </tr>
-                        </thead>
-                        <tbody class="divide-y divide-gray-200">
-                            <tr v-for="(stats, artistName) in globalArtistStats" :key="artistName" class="hover:bg-gray-50 transition-colors duration-150">
-                                <td class="py-3 px-4 text-base text-gray-900 font-medium">{{ artistName }}</td>
-                                <td class="py-3 px-4 text-base text-gray-700">{{ stats.totalWords.toLocaleString() }}</td>
-                                <td class="py-3 px-4 text-base text-gray-700">{{ stats.uniqueWords.toLocaleString() }}</td>
-                                <td class="py-3 px-4 text-base text-gray-700">{{ stats.songs.toLocaleString() }}</td>
-                                <td class="py-3 px-4 text-base text-gray-700">{{ stats.avgWordsPerSong.toFixed(2) }}</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <!-- Tabla de Palabras Más Frecuentes por Artista Global -->
-                <div class="overflow-x-auto">
-                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Palabras Más Frecuentes por Artista (Top 5)</h3>
-                    <table class="min-w-full bg-white rounded-lg shadow-md border border-gray-200">
-                        <thead class="bg-gray-100">
-                            <tr>
-                                <th class="py-3 px-4 text-left text-sm font-medium text-gray-600 uppercase tracking-wider rounded-tl-lg">Artista</th>
-                                <th class="py-3 px-4 text-left text-sm font-medium text-gray-600 uppercase tracking-wider rounded-tr-lg">Palabras Frecuentes (Palabra: Conteo)</th>
-                            </tr>
-                        </thead>
-                        <tbody class="divide-y divide-gray-200">
-                            <tr v-for="(words, artistName) in globalFrequentWords" :key="artistName" class="hover:bg-gray-50 transition-colors duration-150">
-                                <td class="py-3 px-4 text-base text-gray-900 font-medium">{{ artistName }}</td>
-                                <td class="py-3 px-4 text-base text-gray-700">
-                                    <span v-if="words.length > 0">
-                                        {{ words.map(w => `${w.word}: ${w.count}`).join(', ') }}
-                                    </span>
-                                    <span v-else class="text-gray-500">N/A</span>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                <global-stats-table :stats="globalArtistStats"></global-stats-table>
+                <global-frequent-words-table :words-by-artist="globalFrequentWords"></global-frequent-words-table>
             </div>
         </div>
 
@@ -210,7 +72,7 @@
         <div v-if="error" class="text-center text-red-600 text-xl font-semibold mt-8">Error al cargar los datos: {{ error }}</div>
     </div>
 
-    <!-- Link to external JS file -->
-    <script src="script.js"></script>
+    <!-- Cargar el script principal como un módulo -->
+    <script type="module" src="main.js"></script>
 </body>
 </html>
