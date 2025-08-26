@@ -1,0 +1,53 @@
+/* Estilos personalizados mínimos para el resaltado y pre-wrap */
+.highlight {
+    background-color: #fde047; /* Tailwind yellow-200 */
+    font-weight: bold;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+.generation-text {
+    white-space: pre-wrap; /* Para respetar los saltos de línea (\n) */
+    word-wrap: break-word; /* Para evitar desbordamiento en palabras largas */
+}
+/* Estilo para el indicador gráfico de palabras */
+.word-bar {
+    background-color: #60a5fa; /* Tailwind blue-400 */
+    height: 8px;
+    border-radius: 4px;
+}
+/* Estilo para el texto seleccionado de palabras frecuentes */
+.selected-word-tag {
+    background-color: #a78bfa; /* Tailwind violet-400 */
+    color: white;
+    padding: 4px 8px;
+    border-radius: 9999px; /* rounded-full */
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+.unselected-word-tag {
+    background-color: #e5e7eb; /* Tailwind gray-200 */
+    color: #4b5563; /* Tailwind gray-700 */
+    padding: 4px 8px;
+    border-radius: 9999px; /* rounded-full */
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+/* Estilos para el slider */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background: #4f46e5; /* Tailwind indigo-600 */
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.3);
+}
+input[type="range"]::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    background: #4f46e5; /* Tailwind indigo-600 */
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.3);
+}
