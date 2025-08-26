@@ -30,7 +30,7 @@
         <section class="mb-8 flex flex-col sm:flex-row items-center justify-between space-y-4 sm:space-y-0 sm:space-x-4">
             <div class="w-full sm:w-auto flex-grow">
                 <label for="artist-select" class="block text-lg font-semibold text-gray-700 mb-2">Selecciona un Artista:</label>
-                <select id="artist-select" v-model="selectedArtist" @change="resetGenerationsAndWords"
+                <select id="artist-select" v-model="selectedArtist"
                         class="block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-indigo-500 focus:border-indigo-500 text-lg bg-white">
                     <option v-for="artistName in artists" :key="artistName" :value="artistName">
                         {{ artistName }}
@@ -66,6 +66,12 @@
                 <global-frequent-words-table :words-by-artist="globalFrequentWords"></global-frequent-words-table>
             </div>
         </div>
+
+        <!-- Contenido Principal: Pestaña de Explorar Dataset -->
+        <div v-if="activeTab === 'dataset'">
+             <dataset-explorer :songs="artistSongs" :loading="datasetLoading" :error="datasetError"></dataset-explorer>
+        </div>
+
 
         <!-- Mensajes de carga y error -->
         <div v-if="loading" class="text-center text-indigo-600 text-xl font-semibold mt-8">Cargando datos...</div>

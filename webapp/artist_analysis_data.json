@@ -1,5 +1,6 @@
 {
   "Mercedes Sosa": {
+    "url_dataset": "dataset/01-mercedes-sosa-534.json",
     "words": [
       {
         "word": "vida",
@@ -283,15 +284,11 @@
         "id": "5650fe461af92bf67aeaeb7a16d989b7",
         "title": "Mercedes Sosa",
         "text": "Afuera, el sol se va\nahogando su vida por la noche\nse está poniendo gris\ncomo una estrella fugaz\nen las sombras de tu casa.\n\nEl mar es un espejo sin fondo\nque no deja ver lo que yo siento\ny en mi piel dormida\ntu recuerdo y tú me vas a recordar\nel amor del ayer, ese verano\ncuando te vi partir...<eos>"
-      },
-      {
-        "id": "d4ddba6413ca73cfecd29c325cccafa0",
-        "title": "Mercedes Sosa",
-        "text": "Por qué no puedo yo\nhacer una canción, si la quiero cantar.\nPara que canten todos los días, y así cantaran siempre\nlas cosas más bellas del mundo...\nQue en el alma mía sonara la alegría,\nque en las noches de luna llena se encendiera el sol;\ny en cada cosa que canta mi corazón,\nla vida nos diera su amor.\nY a ti te daría todo lo mejor:\npara vivir por fin feliz sin tener penas ni dolor...<eos>"
       }
     ]
   },
   "La Barra": {
+    "url_dataset": "dataset/02-la-barra-528.json",
     "words": [
       {
         "word": "amor",
@@ -579,6 +576,7 @@
     ]
   },
   "Juan Gabriel": {
+    "url_dataset": "dataset/03-juan-gabriel-492.json",
     "words": [
       {
         "word": "amor",
@@ -866,6 +864,7 @@
     ]
   },
   "Raphael": {
+    "url_dataset": "dataset/04-raphael-489.json",
     "words": [
       {
         "word": "amor",
@@ -1153,6 +1152,7 @@
     ]
   },
   "Palito Ortega": {
+    "url_dataset": "dataset/05-palito-ortega-484.json",
     "words": [
       {
         "word": "amor",
@@ -1440,6 +1440,7 @@
     ]
   },
   "Los Palmeras": {
+    "url_dataset": "dataset/06-los-palmeras-472.json",
     "words": [
       {
         "word": "amor",
@@ -1727,6 +1728,7 @@
     ]
   },
   "Los Chalchaleros": {
+    "url_dataset": "dataset/07-los-chalchaleros-449.json",
     "words": [
       {
         "word": "amor",
@@ -2014,6 +2016,7 @@
     ]
   },
   "Leo Dan": {
+    "url_dataset": "dataset/08-leo-dan-453.json",
     "words": [
       {
         "word": "amor",
@@ -2301,6 +2304,7 @@
     ]
   },
   "Andrés Calamaro": {
+    "url_dataset": "dataset/09-andres-calamaro-455.json",
     "words": [
       {
         "word": "quiero",
@@ -2588,6 +2592,7 @@
     ]
   },
   "Litto Nebbia": {
+    "url_dataset": "dataset/10-litto-nebbia-438.json",
     "words": [
       {
         "word": "amor",
@@ -2874,7 +2879,296 @@
       }
     ]
   },
+  "Sabroso": {
+    "url_dataset": "dataset/11-sabroso-458.json",
+    "words": [
+      {
+        "word": "amor",
+        "count": 951
+      },
+      {
+        "word": "quiero",
+        "count": 685
+      },
+      {
+        "word": "vida",
+        "count": 486
+      },
+      {
+        "word": "corazón",
+        "count": 428
+      },
+      {
+        "word": "solo",
+        "count": 295
+      },
+      {
+        "word": "ahora",
+        "count": 293
+      },
+      {
+        "word": "alma",
+        "count": 265
+      },
+      {
+        "word": "puedo",
+        "count": 256
+      },
+      {
+        "word": "siempre",
+        "count": 256
+      },
+      {
+        "word": "piel",
+        "count": 247
+      },
+      {
+        "word": "sabroso",
+        "count": 243
+      },
+      {
+        "word": "nunca",
+        "count": 235
+      },
+      {
+        "word": "mujer",
+        "count": 205
+      },
+      {
+        "word": "noche",
+        "count": 203
+      },
+      {
+        "word": "bien",
+        "count": 200
+      },
+      {
+        "word": "aquí",
+        "count": 199
+      },
+      {
+        "word": "cuerpo",
+        "count": 195
+      },
+      {
+        "word": "nadie",
+        "count": 188
+      },
+      {
+        "word": "cada",
+        "count": 186
+      },
+      {
+        "word": "sólo",
+        "count": 174
+      },
+      {
+        "word": "boca",
+        "count": 174
+      },
+      {
+        "word": "siento",
+        "count": 170
+      },
+      {
+        "word": "tiempo",
+        "count": 162
+      },
+      {
+        "word": "vivir",
+        "count": 159
+      },
+      {
+        "word": "loco",
+        "count": 159
+      },
+      {
+        "word": "dime",
+        "count": 157
+      },
+      {
+        "word": "dame",
+        "count": 144
+      },
+      {
+        "word": "hace",
+        "count": 140
+      },
+      {
+        "word": "gusta",
+        "count": 135
+      },
+      {
+        "word": "adiós",
+        "count": 133
+      },
+      {
+        "word": "contigo",
+        "count": 133
+      },
+      {
+        "word": "ojos",
+        "count": 124
+      },
+      {
+        "word": "mundo",
+        "count": 123
+      },
+      {
+        "word": "aunque",
+        "count": 123
+      },
+      {
+        "word": "volver",
+        "count": 117
+      },
+      {
+        "word": "dolor",
+        "count": 113
+      },
+      {
+        "word": "besos",
+        "count": 112
+      },
+      {
+        "word": "nena",
+        "count": 111
+      },
+      {
+        "word": "feliz",
+        "count": 110
+      },
+      {
+        "word": "pena",
+        "count": 106
+      },
+      {
+        "word": "beso",
+        "count": 106
+      },
+      {
+        "word": "pasión",
+        "count": 104
+      },
+      {
+        "word": "fiesta",
+        "count": 103
+      },
+      {
+        "word": "ritmo",
+        "count": 102
+      },
+      {
+        "word": "veces",
+        "count": 102
+      },
+      {
+        "word": "fuego",
+        "count": 101
+      },
+      {
+        "word": "bailar",
+        "count": 99
+      },
+      {
+        "word": "conmigo",
+        "count": 97
+      },
+      {
+        "word": "mami",
+        "count": 96
+      },
+      {
+        "word": "amar",
+        "count": 96
+      }
+    ],
+    "stats": {
+      "totalWords": 108564,
+      "uniqueWords": 5963,
+      "songs": 458,
+      "avgWordsPerSong": 237
+    },
+    "generations": [
+      {
+        "id": "b4e8ca456f359e7ac807a86e79b92bdd",
+        "title": "Sabroso",
+        "text": "La vida no es un problema\ny la gente está pendiente de todo.\nNo sé qué haría yo sin ti, pero mi amor lo hace mejor.\nY ahora que ya estás lejos de mí, te pido por favor\nque me dejes ir contigo si tú quieres volver a quererme otra vez.\n\nMi corazón y el mío se quieren,\nmi alma necesita una salida para seguir viviendo así.\nPero tu orgullo, mi razón de ser me traicionan,\nmis sentimientos son demasiado fuertes como para dejarme marchar solo con vos.\nYo nunca he sido bueno en nada ni en nadie, siempre fui honesto conmigo mismo.\nTu orgullo ha vuelto a su lugar cuando más le necesitaba,\nsimplemente porque fue algo natural entre nosotros dos.\nAhora tengo mucho miedo y también muy triste estoy pensando,\nporque hoy me arrepiento, del haber perdido tanto tiempo esperando esta oportunidad.\nSi pudiera elegir la forma correcta de empezar nuestra historia, sería tan feliz como ayer;\npero al fin encontré las palabras precisas, mis sueños, mis caricias,\npor eso te digo adiós para siempre jamás.<eos>"
+      },
+      {
+        "id": "c1888edee9e976ccb8986ab714f75860",
+        "title": "Sabroso",
+        "text": "Cuando yo te conocí no me di cuenta\nque eras una mujer muy buena, muy hermosa y muy sensual.\nY tu sonrisa que al verte hoy es toda mi ilusión.\nYo le dije a esa chica lo mucho que ella amaba\ny eso fue todo para ti...\nTodo ha pasado ya lo siento por vos,\ntodo este amor se quedó en el olvido.\nNo llores más, solo dime adiós, si todavía estás conmigo.\nTe espero en la puerta del corazón de madrugada\npara poder abrazarte un poco mas.\nPor favor, llámame siempre que quieras volver junto a mí.<eos>"
+      },
+      {
+        "id": "e0f6ce249b5c0c1869f694a81f1858f1",
+        "title": "Sabroso",
+        "text": "Yo sé que tu amor fue para siempre\ny hoy en mi mente no te puedo encontrar.\nEs un sueño y es de verdad, yo me aferro a ti\npor eso cada día estoy más cerca del sol.\n\nSé que jamás podré olvidarte como antes lo hice contigo\naunque sea por una razón u otra, ya nunca seré tuyo.\nNo hay nada ni nadie igual entre tú y yo.\nMe muero si tú estás junto a mí sin poderme amar.\nPorque tú eres el alma mía porque yo soy parte de tu ser.\nTú sabes bien que te amaré hasta la muerte.<eos>"
+      },
+      {
+        "id": "842490537b29067708bf6ad0ffde5142",
+        "title": "Sabroso",
+        "text": "Ella no me quiere,\nella es para mí\nuna flor de primavera.\nÉl la ama y yo le amo\ny yo a ella también la quiero\na él no lo puedo negar.\nPero si el destino quiso que fuera\nla mujer más hermosa del mundo\nél se enamoró perdidamente\npor amor de Dios.\nEs como un milagro\nque alumbra mi vida,\nes una bendición divina\nQue en su plenitud\nme llena toda, todo con alegría.<eos>"
+      },
+      {
+        "id": "197830c492ff8b377c883f22c5e78c4b",
+        "title": "Sabroso",
+        "text": "Que te quiero, que te extraño\nque me duele tanto el alma y no sé vivir sin ti.\nEs tan grande tu amor por mí y es de un peso inmenso\nes como si yo fuera a morirme\nte amo con todo mi corazón.\n\nTe necesito en cada noche para tenerte conmigo\nsi tú quieres darme una oportunidad,\npara entregarla al dolor más profundo del universo.\nPara poder seguir viviendo así contigo\nsin pensar nunca en nada ni sentir lo mismo.<eos>"
+      },
+      {
+        "id": "cd3acb8370228de3b94f68be629db9d2",
+        "title": "Sabroso",
+        "text": "Cuando te vi en la fiesta,\nte miré y sonreí.\nY a través de tus ojos,\nla noche me pareció bella.\nNo fue una cita perfecta,\npero tuve que confesarte lo mucho que yo quería estar contigo,\ny ahora siento como si el tiempo se detuviera.\nLa noche es tan hermosa...\nEs más bonita cuando estás aquí,\nes más linda cada día...\nPero tengo miedo de perderte otra vez por tu amor.\nQuiero gritar mi nombre para olvidarla, pero no puedo escuchar su voz al llegar junto a mí.\nSi tú me quieres todavía quiero ser feliz con ella,\nque será toda mía.\nYo sé muy bien lo que siente ella por ti hoy.\nPorque eres mi mujer desde hace muchos años.<eos>"
+      },
+      {
+        "id": "17c2067608a00d4f3aefeb530ff2196c",
+        "title": "Sabroso",
+        "text": "Te he visto con la mirada,\nte has vuelto loca de pasión.\nY te ha besado en el pelo y lo has hecho tú.\nNo sé por qué me dejas así,\npero tu amor es como un rayo que va a llegar hasta mi corazón.\nPero no puedo más sin ti.\nPorque no puedes ser feliz si eres mía.\n\nSi yo fuera quien fueras tú,\nme moriría lentamente por dentro.\nMe moriría despacio porque estuvieras conmigo.\nEs imposible vivir una vida contigo.\nLa vida sería tan cruelmente fría pero no hay dolor igual que este fuego abrasador.\nAmor, nada puede cambiar eso ya lo ves,\nno quiero ni pensar cómo será para mí...\nTodo está sucediendo entre nosotros, todo se acaba aquí adentro\nes sólo una aventura loca pero es algo hermoso que voy hacer hoy.<eos>"
+      },
+      {
+        "id": "50ffac46fef47c85de2c002ef8218378",
+        "title": "Sabroso",
+        "text": "Si la gente te pregunta\nsi no estás enamorada de él, si eres feliz o qué?\nno se puede decir que lo haces bien. Si te dicen que te ama y por eso es mejor así, pues, ya ves, no puedo entenderte.\nQue quieres ser como un niño abandonado, sin hogar para estar a tu lado,\nque tienes otro amor que nunca podrás olvidar...\nY yo me pregunto porqué has llorado tanto hoy porque te marchaste.\nPorque en tus ojos veo lágrimas amargas\npor las dudas que dejaron mi alma herida\ny ahora estas llorando con el corazón roto.\nPor ti siento una pena profunda, por quererte tanto,\nme parece mentira que llores cuando tú le mientes al oído.\nNo soy bueno ni quiero serlo pero siempre estoy pensando en vos.<eos>"
+      },
+      {
+        "id": "e9feec8e129cba595769a1610a1e224e",
+        "title": "Sabroso",
+        "text": "Yo soy el que me ha hecho tanto daño\ny lo he querido así, sin medidas.\nEs verdad que no puedo vivir sin ti,\nsi tú estás conmigo y yo estoy contigo\npero no te olvides de mí, si ya nunca más vuelvas a quererme.\nPorque sé que mi vida cambiará al día siguiente por un adiós\nque jamás podrás olvidar, amor mío, cuando tu fuiste mía.\nSi en vez de estar enamorado voy a morir lentamente,\nporque es muy difícil seguir amando como antes había sido hasta ahora.\nY pensar que fui capaz de hacer algo tan grande para amarte otra vez.\nNo importa qué pasará después?, si la distancia se va haciendo mas larga...\nPero dime cuál será nuestro destino final,\nyo seré quien decida dónde nos iremos esta noche a soñar.<eos>"
+      },
+      {
+        "id": "b481f8ab2901333085026a8884622a57",
+        "title": "Sabroso",
+        "text": "Si te vas de mí\nyo no sé cómo olvidarte,\nsi me dejas que siga llorando.\nPorque a mi lado estás tú\ny el mundo es una pared.\nTe has convertido en un objeto para ti y nada más.\n\nY ahora yo estoy enamorado de tu amor\nque nunca se olvida,\nme dices la verdad por favor.\nPero si ya no puedo vivir sin verte feliz\nte juro que este momento va terminar.\n\nCuando te vi partir fue como si fuera ayer\nun sueño que nunca llegó ni siquiera al corazón.\nSe apagó todo lo demás cuando estaba lejos de ti.\nNo supe valorar lo mucho que fui capaz hasta ese día\nde ser feliz, pero después de haberte amado tanto...<eos>"
+      },
+      {
+        "id": "81bc54ec124e155746920dd6b04dfefb",
+        "title": "Sabroso",
+        "text": "Tú me abandonaste, tú te marchaste de mí\nme dejaste solo en mi cama y no volviste a saber nada.\nMe dejaste sola con la soledad que hoy me deja sin voz,\ny ya no tengo palabras para decirte adiós.\nYo sé que nunca volverás, pero yo sigo estando lejos\nde ti, de nadie más.\nY aunque tu cariño sigue siendo el mismo, no podré olvidarte jamás.\nEs posible que comprendas cuánto he sufrido por lo nuestro\nque hemos perdido tanto amor.\nNo quiero ser un ladrón como otros tantos ladrones\npero soy capaz de hacer daño cuando se quiere herir\naunque sea muy tarde para robar.<eos>"
+      },
+      {
+        "id": "b0180fb9599735d9d2a5337aabeb94fc",
+        "title": "Sabroso",
+        "text": "El amor no es un secreto\nsino una verdad.\nLa mujer que amé siempre me quiso,\nel hombre de mi vida se enamoró perdidamente\ny fue por eso que ahora estoy aquí para ti.\nYo sé bien lo que haces cuando estás a tu lado,\npero tú eres todo en ella\ny yo te quiero sólo a ti.\nY si el mundo da vueltas y más vueltas\npor qué será? ¿Porqué sufrirá la muerte si yo vivo sin tu cariño?\nPorque al fin podré vivir feliz sabiendo que nunca he sido tuyo\nporque ya nada importa si hay otro ser querido o amado.<eos>"
+      },
+      {
+        "id": "4a50e3d5d02ba94178b4673d389b2a6d",
+        "title": "Sabroso",
+        "text": "Si supieras que te amo,\nque me muero por tenerte junto a mí.\nQue no puedo dejar de pensar en ti cada día más.\nY es tan intenso el amor entre nuestros cuerpos,\nme quema y se hace realidad.\nCada noche más y más cuando estoy contigo,\ny ya no estás aquí para amarte como lo hago yo ahora.\nEstoy desesperado porque tú estas conmigo,\nya no tengo otra oportunidad de vivir si tú eres mía.\nMe muero por tenerte cerca de mi vida,\npero no encuentro la manera.\nYo solo quiero tu calor,\ntú sabes bien que yo también soy tuyo.\nTe he visto sonreír sin decir una palabra,\ntu sonrisa ha vuelto loca al verte pasar.\nEres todo un sueño volver a sentirte así.\nQuiero besarte toda la piel,\nquiero olvidarme del mundo pero no vivo con vos.\nHoy siento que ya no hay nadie aquí en este momento,\nsino alguien aquí sentado frente a mí.<eos>"
+      },
+      {
+        "id": "61b7953dbf57035927db9e8b5a258f7b",
+        "title": "Sabroso",
+        "text": "Yo no sé si te quiero\nyo ya no me siento así, solo y sin ti.\nEs que yo se muy bien contigo\nes por eso que hoy vivo en un mundo diferente a como lo viví ayer\nque tú fuiste mía para siempre.\nY ahora estoy pensando,\nqué será de mi vida después del amor.\nQue fue tan feliz nuestro amor es algo mucho más profundo\ny aún tengo tu recuerdo aquí, junto al mar, en mis brazos.\nEnamorado está este momento,\nya nunca podré olvidarte.<eos>"
+      },
+      {
+        "id": "40c2ed598c589fe46a1de02566f56f43",
+        "title": "Sabroso",
+        "text": "La primera vez que te vi\nme enamoré y no lo pude evitar,\npero hoy quiero estar a tu lado otra noche.\nY ahora qué puedo hacer?\nSimplemente dime si me amas como yo pensaba antes de conocerte,\ny por eso me siento tan feliz contigo cada día más.\n\nNo sé cómo explicarte mi error,\nsi tú quieres ser la mujer perfecta para mí,\nyo tengo el corazón muy loco por ti, pero en realidad no soy nada tuyo.\nYo no se ni siquiera cuando te conocí,\nno se porque ya sabes que nunca fui un tonto enamorado,\naunque sea mentira todo es verdad.\nQue me estoy muriendo sin tenerte cerca y decirte cosas bonitas\ncomo hacerte daño con tus besos, o darte hasta morir.\nPero hoy necesito saber si te amo tal cual eres,\nque te extraño tanto... y que no entiendo porqué no estas aquí conmigo,\nsolo una amiga mía ha venido a molestarte.\nMe muero de ganas de amarte tanto así.\nPorque nadie puede querernos igual,\nporque todos los demás somos diferentes,\nsólo nosotros dos.\nSólo ellos tres.<eos>"
+      }
+    ]
+  },
   "Pablo Milanés": {
+    "url_dataset": "dataset/12-pablo-milanes-402.json",
     "words": [
       {
         "word": "amor",
@@ -3162,6 +3456,7 @@
     ]
   },
   "Sandro": {
+    "url_dataset": "dataset/13-sandro-398.json",
     "words": [
       {
         "word": "amor",
@@ -3449,6 +3744,7 @@
     ]
   },
   "Horacio Guarany": {
+    "url_dataset": "dataset/14-horacio-guarany-413.json",
     "words": [
       {
         "word": "amor",
@@ -3736,6 +4032,7 @@
     ]
   },
   "Rocío Dúrcal": {
+    "url_dataset": "dataset/15-rocio-durcal-382.json",
     "words": [
       {
         "word": "amor",
@@ -4023,6 +4320,7 @@
     ]
   },
   "Víctor Heredia": {
+    "url_dataset": "dataset/16-victor-heredia-396.json",
     "words": [
       {
         "word": "amor",
@@ -4310,6 +4608,7 @@
     ]
   },
   "Ulises Bueno": {
+    "url_dataset": "dataset/17-ulises-bueno-385.json",
     "words": [
       {
         "word": "amor",
@@ -4597,6 +4896,7 @@
     ]
   },
   "Jairo": {
+    "url_dataset": "dataset/18-jairo-353.json",
     "words": [
       {
         "word": "amor",
@@ -4883,294 +5183,8 @@
       }
     ]
   },
-  "Chaqueño Palavecino": {
-    "words": [
-      {
-        "word": "amor",
-        "count": 404
-      },
-      {
-        "word": "corazón",
-        "count": 263
-      },
-      {
-        "word": "quiero",
-        "count": 211
-      },
-      {
-        "word": "vida",
-        "count": 146
-      },
-      {
-        "word": "alma",
-        "count": 144
-      },
-      {
-        "word": "noche",
-        "count": 111
-      },
-      {
-        "word": "siempre",
-        "count": 107
-      },
-      {
-        "word": "canto",
-        "count": 106
-      },
-      {
-        "word": "solo",
-        "count": 98
-      },
-      {
-        "word": "nunca",
-        "count": 82
-      },
-      {
-        "word": "cantar",
-        "count": 82
-      },
-      {
-        "word": "tierra",
-        "count": 80
-      },
-      {
-        "word": "vino",
-        "count": 79
-      },
-      {
-        "word": "hace",
-        "count": 75
-      },
-      {
-        "word": "luna",
-        "count": 75
-      },
-      {
-        "word": "cielo",
-        "count": 72
-      },
-      {
-        "word": "ojos",
-        "count": 71
-      },
-      {
-        "word": "zamba",
-        "count": 70
-      },
-      {
-        "word": "tiempo",
-        "count": 70
-      },
-      {
-        "word": "guitarra",
-        "count": 68
-      },
-      {
-        "word": "carnaval",
-        "count": 66
-      },
-      {
-        "word": "flor",
-        "count": 64
-      },
-      {
-        "word": "camino",
-        "count": 63
-      },
-      {
-        "word": "volver",
-        "count": 61
-      },
-      {
-        "word": "adiós",
-        "count": 60
-      },
-      {
-        "word": "allá",
-        "count": 58
-      },
-      {
-        "word": "dolor",
-        "count": 57
-      },
-      {
-        "word": "jamás",
-        "count": 56
-      },
-      {
-        "word": "recuerdo",
-        "count": 55
-      },
-      {
-        "word": "mujer",
-        "count": 55
-      },
-      {
-        "word": "fuego",
-        "count": 54
-      },
-      {
-        "word": "querer",
-        "count": 53
-      },
-      {
-        "word": "sueño",
-        "count": 53
-      },
-      {
-        "word": "chacarera",
-        "count": 53
-      },
-      {
-        "word": "dueño",
-        "count": 53
-      },
-      {
-        "word": "monte",
-        "count": 52
-      },
-      {
-        "word": "boca",
-        "count": 52
-      },
-      {
-        "word": "pago",
-        "count": 51
-      },
-      {
-        "word": "pecho",
-        "count": 50
-      },
-      {
-        "word": "amanecer",
-        "count": 48
-      },
-      {
-        "word": "pena",
-        "count": 48
-      },
-      {
-        "word": "bien",
-        "count": 48
-      },
-      {
-        "word": "aquel",
-        "count": 47
-      },
-      {
-        "word": "besos",
-        "count": 47
-      },
-      {
-        "word": "cantor",
-        "count": 47
-      },
-      {
-        "word": "penas",
-        "count": 47
-      },
-      {
-        "word": "andar",
-        "count": 47
-      },
-      {
-        "word": "sólo",
-        "count": 46
-      },
-      {
-        "word": "quiere",
-        "count": 46
-      },
-      {
-        "word": "cantando",
-        "count": 46
-      }
-    ],
-    "stats": {
-      "totalWords": 48949,
-      "uniqueWords": 5892,
-      "songs": 346,
-      "avgWordsPerSong": 141
-    },
-    "generations": [
-      {
-        "id": "aabaa4419b57e7389904b305a9ae56a5",
-        "title": "Chaqueño Palavecino",
-        "text": "A mi tierra la llaman el Chaguar\nporque en su raíz vive\nel quebrachal.\nCon sus manitos de nieve,\nlos cerros y las sierras;\nen los valles se escucha\nla voz del pueblo.\nY a lo lejos se oye cantar:\n\"No te vayas porque yo me voy\".\nPero no olvides que es tu canto\nque por ti aprendí al fin\na comprender mejor todo aquello\nque un día fui aprendiendo\nal corazón.\nYo quiero volver otra vez\ncon tus recuerdos nuevos;\npero nunca vuelvas jamás\ny hasta cuando estés muy triste\nno te olvidare.<eos>"
-      },
-      {
-        "id": "b940451d0648d0201662420e1f5bb466",
-        "title": "Chaqueño Palavecino",
-        "text": "A los ojos de tus sueños\nme ha llegado el momento, mi amor.\nNo quiero que te vayas\nporque me muero por verte partir,\ny a tu lado ya no tengo esperanzas;\nni un día más.\nEnamorado estoy yo con vos\na la sombra del árbol se fue mi vida.\nYo sé bien donde están mis brazos, y dónde van las noches,\ndonde al despertar tú me despertaste.<eos>"
-      },
-      {
-        "id": "3b341839eb474b1a1eb4fe7044d77d71",
-        "title": "Chaqueño Palavecino",
-        "text": "Me gusta tu pelo largo,\nme hace pensar en ti.\nCon el tiempo me voy enamorando;\ncomo un sol que se va, como una estrella fugaz,\ny yo te quiero tanto así:\nque no puedo quererte más.\nPor eso cuando estoy contigo pienso siempre en mí;\nyo siento dentro de mi alma la misma emoción\nde amarte hasta morir...<eos>"
-      },
-      {
-        "id": "ee46ec62c58e6d650aadcb014ef3e20f",
-        "title": "Chaqueño Palavecino",
-        "text": "Con la guitarra y el violín\nde mi tierra amada, yo te canto.\nTe quiero cantar, contigo en tus cuerdas,\nte tengo a ti junto al fuego sagrado.\nEn mis ojos arde un resplandor de amor;\nel alma que me lleva hacia tu voz,\nyo te voy llevando para siempre dentro del corazón.\n\nCuando llega la noche\ny el vino se hace silencio entre nosotros dos.\nYo sé bien lo mucho que has llorado por mí.<eos>"
-      },
-      {
-        "id": "a33cd1c4d7cb34fd61ac205ba0210e8c",
-        "title": "Chaqueño Palavecino",
-        "text": "Cuando el sol se va\nyo no sé si podré encontrar tu amor.\nYo te quiero y te puedo amar,\npero a mi manera yo también he de quererte.\n\nNo me dejes nunca partir\nno dejaré que nadie sepa ya lo nuestro,\nsi algún día tú serás mía para mí;\ny si un día tú volverás conmigo\nconmigo viviré la vida entera\npara ti como ayer fue.<eos>"
-      },
-      {
-        "id": "140dd1c44515d2302efd9e1548dd3b3e",
-        "title": "Chaqueño Palavecino",
-        "text": "Si la tierra es un pañuelo\nque se va con el viento, que no quiere llorar.\nY si las manos son garras\ny los ojos van a salírseme al suelo\nsi me dan ganas de llorar.\n\nYo sé bien lo que pasa en este mundo\nyo quiero saber porque estoy aquí\nporque nadie sabe donde nací.\nPorque yo tengo mi nido y mis estrellas\npero nada me queda por hacer.\n\nPor eso canto para mí\npor ser como soy\npara sentirme feliz\naunque sea muy tarde\ncuando muera mi vida\nno te preocupes que siempre estaré.<eos>"
-      },
-      {
-        "id": "c1232e4e614c141b9bc603bfbde54137",
-        "title": "Chaqueño Palavecino",
-        "text": "Cuando el río se va\nyo no puedo olvidarte,\npero te quiero.\nY si en mi camino estás,\nme voy contigo a morir.\nSi es que te vas y me quieres;\nte juro por mis lágrimas:\nque eres lo más lindo del mundo;\ndejándome solo un día.\nPero cuando la noche se duerme\ncuando llega el alba;\nnoto una lágrima en tu boca.\nPor qué lloras así?\nPorque ya sabes como soy.<eos>"
-      },
-      {
-        "id": "a4b279b16683ee234c9b5baace5a6c35",
-        "title": "Chaqueño Palavecino",
-        "text": "No te vayas a morir\nsi no me amas como antes\npor un querer tan inmenso.\nSi no, si ya no estás en mi vida\nte entrego lo que yo he tenido\ny al fin el amor se ha vuelto pasión.\nEs por eso que te digo adiós\nno tengas miedo de perderme así:\nel corazón es mío y siempre está en tus manos.\nY nunca vuelvas con la tristeza\nque tú has dejado para mí.<eos>"
-      },
-      {
-        "id": "008e34a9e1e543c6addec620ef3783f3",
-        "title": "Chaqueño Palavecino",
-        "text": "Por el camino de las estrellas\nyo voy sintiendo que me va.\nY cuando siento su mano en mi cintura,\nno puedo evitar sentir sus manos recorriéndome la espalda.\nMe da miedo tenerle cerca y no poderlo olvidar.\nSi pudiera llegar hasta él para besarle con locura,\npero si se le diera por volver a quererme,\npara qué quiero tanto amor?\nPorque yo sé bien lo que siente al besar sus labios rojos míos,\nporque yo sé bien que es imposible olvidarla nunca más.<eos>"
-      },
-      {
-        "id": "7eac6ec4c05d95274ae1084e691db8a3",
-        "title": "Chaqueño Palavecino",
-        "text": "Me gusta la gente cuando se habla\nde su amor, de sus amores.\nPor eso siempre me pregunto:\n¿quién será? ¿Quién es?\nY si en el fondo del alma\nsiente un rumor que crece dentro mío;\nme voy a enamorar sin querer;\ny aunque no quiera yo le daré mi corazón;\nen cambio hoy pienso otra cosa más mía...\nMi vida comienza con los años veinte y treinta\nporque tengo una novia nueva y otro muchacho nuevo;\nmi vida empieza también para mí.<eos>"
-      },
-      {
-        "id": "251962f05af9992059fce5884b68266c",
-        "title": "Chaqueño Palavecino",
-        "text": "A veces, cuando te busco\nTe quiero tanto que no puedo olvidarte.\nYo sé que es imposible quererte como a nadie\nPero me falta el amor de una vez por todas:\nPara qué volverte loco si hasta ayer era yo tu dueño;\npara qué seguir amando así?\n\nSi pudiera saber lo mucho que te amo\nNo se porqué me das un corazón tan grande\nComo un cielo sin estrellas ni lunas ni luna...\nsi pudiera sabría cómo amarte mi vida entera\nY eso sería todo para ti, nada más!<eos>"
-      },
-      {
-        "id": "574f503449b863a72e192171a898af6a",
-        "title": "Chaqueño Palavecino",
-        "text": "Que el tiempo de los años\nse hace viejo en las noches\ny el invierno se ha vuelto gris.\nCuando el sol va a despertar,\nno sé si llueve o es que la vida ya no da más\nque una sola gota muere al nacer\ndejándome solo sin tu amor.<eos>"
-      },
-      {
-        "id": "20109af24bc45663ccbcc1d1f13f13aa",
-        "title": "Chaqueño Palavecino",
-        "text": "No se puede negar que soy\ncomo el resto de la tierra, como la raíz del viento.\nMe han dicho los ríos: \"que es más fácil encontrar un amor\".\nSi te digo no me dejes engañar.\nY si lo intento yo sé muy bien por qué será.\nYo tengo mi destino y en él estoy pensando.\nPor eso cuando escucho silbar al sol\nme parece escuchar una canción.\nDe las mil ciudades hay muchos lugares;\ny a veces oigo cantar a sus dioses.<eos>"
-      },
-      {
-        "id": "3df25f67421e0cf9e5dde93648bad060",
-        "title": "Chaqueño Palavecino",
-        "text": "Si pudiera saber\nsi el alma se me iba\ny no tenía dónde ir.\nYo quisiera ser como soy,\npara poderte amar sin temor\npor eso te quiero tanto:\ncomo nunca he amado a nadie igual;\nno sé si tú también lo serás?\n\nNo hay que dudar de este amor\nporque yo puedo quererte más todavía;\nni aunque sea sólo una vez\nyo jamás podría olvidar tu boca,\ntu cuerpo y la forma en que tus manos acariciaban mi piel.<eos>"
-      },
-      {
-        "id": "1f8cc0e38386e1cfec10a4610a0bb80e",
-        "title": "Chaqueño Palavecino",
-        "text": "En el alma de mi pueblo\nyo he visto nacer la primavera.\nSoy un canto en pena,\nde esos que nunca se olvidan\nque no hay quien lo aguante\nsi es que a mí me gusta cantar.\nMi vida ha cambiado y ya ves\ntodo está distinto: te quiero volver...\nY aunque estoy muy lejos,\nmi camino comienza a andar;\nno sé si será mañana cuando yo vuelva...<eos>"
-      }
-    ]
-  },
   "Fito Páez": {
+    "url_dataset": "dataset/19-fito-paez-357.json",
     "words": [
       {
         "word": "amor",
@@ -5457,290 +5471,291 @@
       }
     ]
   },
-  "Sabroso": {
+  "Chaqueño Palavecino": {
+    "url_dataset": "dataset/20-chaqueno-palavecino-346.json",
     "words": [
       {
         "word": "amor",
-        "count": 951
-      },
-      {
-        "word": "quiero",
-        "count": 685
-      },
-      {
-        "word": "vida",
-        "count": 486
+        "count": 404
       },
       {
         "word": "corazón",
-        "count": 428
+        "count": 263
       },
       {
-        "word": "solo",
-        "count": 295
+        "word": "quiero",
+        "count": 211
       },
       {
-        "word": "ahora",
-        "count": 293
+        "word": "vida",
+        "count": 146
       },
       {
         "word": "alma",
-        "count": 265
-      },
-      {
-        "word": "puedo",
-        "count": 256
-      },
-      {
-        "word": "siempre",
-        "count": 256
-      },
-      {
-        "word": "piel",
-        "count": 247
-      },
-      {
-        "word": "sabroso",
-        "count": 243
-      },
-      {
-        "word": "nunca",
-        "count": 235
-      },
-      {
-        "word": "mujer",
-        "count": 205
-      },
-      {
-        "word": "noche",
-        "count": 203
-      },
-      {
-        "word": "bien",
-        "count": 200
-      },
-      {
-        "word": "aquí",
-        "count": 199
-      },
-      {
-        "word": "cuerpo",
-        "count": 195
-      },
-      {
-        "word": "nadie",
-        "count": 188
-      },
-      {
-        "word": "cada",
-        "count": 186
-      },
-      {
-        "word": "sólo",
-        "count": 174
-      },
-      {
-        "word": "boca",
-        "count": 174
-      },
-      {
-        "word": "siento",
-        "count": 170
-      },
-      {
-        "word": "tiempo",
-        "count": 162
-      },
-      {
-        "word": "vivir",
-        "count": 159
-      },
-      {
-        "word": "loco",
-        "count": 159
-      },
-      {
-        "word": "dime",
-        "count": 157
-      },
-      {
-        "word": "dame",
         "count": 144
       },
       {
-        "word": "hace",
-        "count": 140
-      },
-      {
-        "word": "gusta",
-        "count": 135
-      },
-      {
-        "word": "adiós",
-        "count": 133
-      },
-      {
-        "word": "contigo",
-        "count": 133
-      },
-      {
-        "word": "ojos",
-        "count": 124
-      },
-      {
-        "word": "mundo",
-        "count": 123
-      },
-      {
-        "word": "aunque",
-        "count": 123
-      },
-      {
-        "word": "volver",
-        "count": 117
-      },
-      {
-        "word": "dolor",
-        "count": 113
-      },
-      {
-        "word": "besos",
-        "count": 112
-      },
-      {
-        "word": "nena",
+        "word": "noche",
         "count": 111
       },
       {
-        "word": "feliz",
-        "count": 110
+        "word": "siempre",
+        "count": 107
       },
       {
-        "word": "pena",
+        "word": "canto",
         "count": 106
       },
       {
-        "word": "beso",
-        "count": 106
+        "word": "solo",
+        "count": 98
       },
       {
-        "word": "pasión",
-        "count": 104
+        "word": "nunca",
+        "count": 82
       },
       {
-        "word": "fiesta",
-        "count": 103
+        "word": "cantar",
+        "count": 82
       },
       {
-        "word": "ritmo",
-        "count": 102
+        "word": "tierra",
+        "count": 80
       },
       {
-        "word": "veces",
-        "count": 102
+        "word": "vino",
+        "count": 79
+      },
+      {
+        "word": "hace",
+        "count": 75
+      },
+      {
+        "word": "luna",
+        "count": 75
+      },
+      {
+        "word": "cielo",
+        "count": 72
+      },
+      {
+        "word": "ojos",
+        "count": 71
+      },
+      {
+        "word": "zamba",
+        "count": 70
+      },
+      {
+        "word": "tiempo",
+        "count": 70
+      },
+      {
+        "word": "guitarra",
+        "count": 68
+      },
+      {
+        "word": "carnaval",
+        "count": 66
+      },
+      {
+        "word": "flor",
+        "count": 64
+      },
+      {
+        "word": "camino",
+        "count": 63
+      },
+      {
+        "word": "volver",
+        "count": 61
+      },
+      {
+        "word": "adiós",
+        "count": 60
+      },
+      {
+        "word": "allá",
+        "count": 58
+      },
+      {
+        "word": "dolor",
+        "count": 57
+      },
+      {
+        "word": "jamás",
+        "count": 56
+      },
+      {
+        "word": "recuerdo",
+        "count": 55
+      },
+      {
+        "word": "mujer",
+        "count": 55
       },
       {
         "word": "fuego",
-        "count": 101
+        "count": 54
       },
       {
-        "word": "bailar",
-        "count": 99
+        "word": "querer",
+        "count": 53
       },
       {
-        "word": "conmigo",
-        "count": 97
+        "word": "sueño",
+        "count": 53
       },
       {
-        "word": "mami",
-        "count": 96
+        "word": "chacarera",
+        "count": 53
       },
       {
-        "word": "amar",
-        "count": 96
+        "word": "dueño",
+        "count": 53
+      },
+      {
+        "word": "monte",
+        "count": 52
+      },
+      {
+        "word": "boca",
+        "count": 52
+      },
+      {
+        "word": "pago",
+        "count": 51
+      },
+      {
+        "word": "pecho",
+        "count": 50
+      },
+      {
+        "word": "amanecer",
+        "count": 48
+      },
+      {
+        "word": "pena",
+        "count": 48
+      },
+      {
+        "word": "bien",
+        "count": 48
+      },
+      {
+        "word": "aquel",
+        "count": 47
+      },
+      {
+        "word": "besos",
+        "count": 47
+      },
+      {
+        "word": "cantor",
+        "count": 47
+      },
+      {
+        "word": "penas",
+        "count": 47
+      },
+      {
+        "word": "andar",
+        "count": 47
+      },
+      {
+        "word": "sólo",
+        "count": 46
+      },
+      {
+        "word": "quiere",
+        "count": 46
+      },
+      {
+        "word": "cantando",
+        "count": 46
       }
     ],
     "stats": {
-      "totalWords": 108564,
-      "uniqueWords": 5963,
-      "songs": 458,
-      "avgWordsPerSong": 237
+      "totalWords": 48949,
+      "uniqueWords": 5892,
+      "songs": 346,
+      "avgWordsPerSong": 141
     },
     "generations": [
       {
-        "id": "b4e8ca456f359e7ac807a86e79b92bdd",
-        "title": "Sabroso",
-        "text": "La vida no es un problema\ny la gente está pendiente de todo.\nNo sé qué haría yo sin ti, pero mi amor lo hace mejor.\nY ahora que ya estás lejos de mí, te pido por favor\nque me dejes ir contigo si tú quieres volver a quererme otra vez.\n\nMi corazón y el mío se quieren,\nmi alma necesita una salida para seguir viviendo así.\nPero tu orgullo, mi razón de ser me traicionan,\nmis sentimientos son demasiado fuertes como para dejarme marchar solo con vos.\nYo nunca he sido bueno en nada ni en nadie, siempre fui honesto conmigo mismo.\nTu orgullo ha vuelto a su lugar cuando más le necesitaba,\nsimplemente porque fue algo natural entre nosotros dos.\nAhora tengo mucho miedo y también muy triste estoy pensando,\nporque hoy me arrepiento, del haber perdido tanto tiempo esperando esta oportunidad.\nSi pudiera elegir la forma correcta de empezar nuestra historia, sería tan feliz como ayer;\npero al fin encontré las palabras precisas, mis sueños, mis caricias,\npor eso te digo adiós para siempre jamás.<eos>"
+        "id": "aabaa4419b57e7389904b305a9ae56a5",
+        "title": "Chaqueño Palavecino",
+        "text": "A mi tierra la llaman el Chaguar\nporque en su raíz vive\nel quebrachal.\nCon sus manitos de nieve,\nlos cerros y las sierras;\nen los valles se escucha\nla voz del pueblo.\nY a lo lejos se oye cantar:\n\"No te vayas porque yo me voy\".\nPero no olvides que es tu canto\nque por ti aprendí al fin\na comprender mejor todo aquello\nque un día fui aprendiendo\nal corazón.\nYo quiero volver otra vez\ncon tus recuerdos nuevos;\npero nunca vuelvas jamás\ny hasta cuando estés muy triste\nno te olvidare.<eos>"
       },
       {
-        "id": "c1888edee9e976ccb8986ab714f75860",
-        "title": "Sabroso",
-        "text": "Cuando yo te conocí no me di cuenta\nque eras una mujer muy buena, muy hermosa y muy sensual.\nY tu sonrisa que al verte hoy es toda mi ilusión.\nYo le dije a esa chica lo mucho que ella amaba\ny eso fue todo para ti...\nTodo ha pasado ya lo siento por vos,\ntodo este amor se quedó en el olvido.\nNo llores más, solo dime adiós, si todavía estás conmigo.\nTe espero en la puerta del corazón de madrugada\npara poder abrazarte un poco mas.\nPor favor, llámame siempre que quieras volver junto a mí.<eos>"
+        "id": "b940451d0648d0201662420e1f5bb466",
+        "title": "Chaqueño Palavecino",
+        "text": "A los ojos de tus sueños\nme ha llegado el momento, mi amor.\nNo quiero que te vayas\nporque me muero por verte partir,\ny a tu lado ya no tengo esperanzas;\nni un día más.\nEnamorado estoy yo con vos\na la sombra del árbol se fue mi vida.\nYo sé bien donde están mis brazos, y dónde van las noches,\ndonde al despertar tú me despertaste.<eos>"
       },
       {
-        "id": "e0f6ce249b5c0c1869f694a81f1858f1",
-        "title": "Sabroso",
-        "text": "Yo sé que tu amor fue para siempre\ny hoy en mi mente no te puedo encontrar.\nEs un sueño y es de verdad, yo me aferro a ti\npor eso cada día estoy más cerca del sol.\n\nSé que jamás podré olvidarte como antes lo hice contigo\naunque sea por una razón u otra, ya nunca seré tuyo.\nNo hay nada ni nadie igual entre tú y yo.\nMe muero si tú estás junto a mí sin poderme amar.\nPorque tú eres el alma mía porque yo soy parte de tu ser.\nTú sabes bien que te amaré hasta la muerte.<eos>"
+        "id": "3b341839eb474b1a1eb4fe7044d77d71",
+        "title": "Chaqueño Palavecino",
+        "text": "Me gusta tu pelo largo,\nme hace pensar en ti.\nCon el tiempo me voy enamorando;\ncomo un sol que se va, como una estrella fugaz,\ny yo te quiero tanto así:\nque no puedo quererte más.\nPor eso cuando estoy contigo pienso siempre en mí;\nyo siento dentro de mi alma la misma emoción\nde amarte hasta morir...<eos>"
       },
       {
-        "id": "842490537b29067708bf6ad0ffde5142",
-        "title": "Sabroso",
-        "text": "Ella no me quiere,\nella es para mí\nuna flor de primavera.\nÉl la ama y yo le amo\ny yo a ella también la quiero\na él no lo puedo negar.\nPero si el destino quiso que fuera\nla mujer más hermosa del mundo\nél se enamoró perdidamente\npor amor de Dios.\nEs como un milagro\nque alumbra mi vida,\nes una bendición divina\nQue en su plenitud\nme llena toda, todo con alegría.<eos>"
+        "id": "ee46ec62c58e6d650aadcb014ef3e20f",
+        "title": "Chaqueño Palavecino",
+        "text": "Con la guitarra y el violín\nde mi tierra amada, yo te canto.\nTe quiero cantar, contigo en tus cuerdas,\nte tengo a ti junto al fuego sagrado.\nEn mis ojos arde un resplandor de amor;\nel alma que me lleva hacia tu voz,\nyo te voy llevando para siempre dentro del corazón.\n\nCuando llega la noche\ny el vino se hace silencio entre nosotros dos.\nYo sé bien lo mucho que has llorado por mí.<eos>"
       },
       {
-        "id": "197830c492ff8b377c883f22c5e78c4b",
-        "title": "Sabroso",
-        "text": "Que te quiero, que te extraño\nque me duele tanto el alma y no sé vivir sin ti.\nEs tan grande tu amor por mí y es de un peso inmenso\nes como si yo fuera a morirme\nte amo con todo mi corazón.\n\nTe necesito en cada noche para tenerte conmigo\nsi tú quieres darme una oportunidad,\npara entregarla al dolor más profundo del universo.\nPara poder seguir viviendo así contigo\nsin pensar nunca en nada ni sentir lo mismo.<eos>"
+        "id": "a33cd1c4d7cb34fd61ac205ba0210e8c",
+        "title": "Chaqueño Palavecino",
+        "text": "Cuando el sol se va\nyo no sé si podré encontrar tu amor.\nYo te quiero y te puedo amar,\npero a mi manera yo también he de quererte.\n\nNo me dejes nunca partir\nno dejaré que nadie sepa ya lo nuestro,\nsi algún día tú serás mía para mí;\ny si un día tú volverás conmigo\nconmigo viviré la vida entera\npara ti como ayer fue.<eos>"
       },
       {
-        "id": "cd3acb8370228de3b94f68be629db9d2",
-        "title": "Sabroso",
-        "text": "Cuando te vi en la fiesta,\nte miré y sonreí.\nY a través de tus ojos,\nla noche me pareció bella.\nNo fue una cita perfecta,\npero tuve que confesarte lo mucho que yo quería estar contigo,\ny ahora siento como si el tiempo se detuviera.\nLa noche es tan hermosa...\nEs más bonita cuando estás aquí,\nes más linda cada día...\nPero tengo miedo de perderte otra vez por tu amor.\nQuiero gritar mi nombre para olvidarla, pero no puedo escuchar su voz al llegar junto a mí.\nSi tú me quieres todavía quiero ser feliz con ella,\nque será toda mía.\nYo sé muy bien lo que siente ella por ti hoy.\nPorque eres mi mujer desde hace muchos años.<eos>"
+        "id": "140dd1c44515d2302efd9e1548dd3b3e",
+        "title": "Chaqueño Palavecino",
+        "text": "Si la tierra es un pañuelo\nque se va con el viento, que no quiere llorar.\nY si las manos son garras\ny los ojos van a salírseme al suelo\nsi me dan ganas de llorar.\n\nYo sé bien lo que pasa en este mundo\nyo quiero saber porque estoy aquí\nporque nadie sabe donde nací.\nPorque yo tengo mi nido y mis estrellas\npero nada me queda por hacer.\n\nPor eso canto para mí\npor ser como soy\npara sentirme feliz\naunque sea muy tarde\ncuando muera mi vida\nno te preocupes que siempre estaré.<eos>"
       },
       {
-        "id": "17c2067608a00d4f3aefeb530ff2196c",
-        "title": "Sabroso",
-        "text": "Te he visto con la mirada,\nte has vuelto loca de pasión.\nY te ha besado en el pelo y lo has hecho tú.\nNo sé por qué me dejas así,\npero tu amor es como un rayo que va a llegar hasta mi corazón.\nPero no puedo más sin ti.\nPorque no puedes ser feliz si eres mía.\n\nSi yo fuera quien fueras tú,\nme moriría lentamente por dentro.\nMe moriría despacio porque estuvieras conmigo.\nEs imposible vivir una vida contigo.\nLa vida sería tan cruelmente fría pero no hay dolor igual que este fuego abrasador.\nAmor, nada puede cambiar eso ya lo ves,\nno quiero ni pensar cómo será para mí...\nTodo está sucediendo entre nosotros, todo se acaba aquí adentro\nes sólo una aventura loca pero es algo hermoso que voy hacer hoy.<eos>"
+        "id": "c1232e4e614c141b9bc603bfbde54137",
+        "title": "Chaqueño Palavecino",
+        "text": "Cuando el río se va\nyo no puedo olvidarte,\npero te quiero.\nY si en mi camino estás,\nme voy contigo a morir.\nSi es que te vas y me quieres;\nte juro por mis lágrimas:\nque eres lo más lindo del mundo;\ndejándome solo un día.\nPero cuando la noche se duerme\ncuando llega el alba;\nnoto una lágrima en tu boca.\nPor qué lloras así?\nPorque ya sabes como soy.<eos>"
       },
       {
-        "id": "50ffac46fef47c85de2c002ef8218378",
-        "title": "Sabroso",
-        "text": "Si la gente te pregunta\nsi no estás enamorada de él, si eres feliz o qué?\nno se puede decir que lo haces bien. Si te dicen que te ama y por eso es mejor así, pues, ya ves, no puedo entenderte.\nQue quieres ser como un niño abandonado, sin hogar para estar a tu lado,\nque tienes otro amor que nunca podrás olvidar...\nY yo me pregunto porqué has llorado tanto hoy porque te marchaste.\nPorque en tus ojos veo lágrimas amargas\npor las dudas que dejaron mi alma herida\ny ahora estas llorando con el corazón roto.\nPor ti siento una pena profunda, por quererte tanto,\nme parece mentira que llores cuando tú le mientes al oído.\nNo soy bueno ni quiero serlo pero siempre estoy pensando en vos.<eos>"
+        "id": "a4b279b16683ee234c9b5baace5a6c35",
+        "title": "Chaqueño Palavecino",
+        "text": "No te vayas a morir\nsi no me amas como antes\npor un querer tan inmenso.\nSi no, si ya no estás en mi vida\nte entrego lo que yo he tenido\ny al fin el amor se ha vuelto pasión.\nEs por eso que te digo adiós\nno tengas miedo de perderme así:\nel corazón es mío y siempre está en tus manos.\nY nunca vuelvas con la tristeza\nque tú has dejado para mí.<eos>"
       },
       {
-        "id": "e9feec8e129cba595769a1610a1e224e",
-        "title": "Sabroso",
-        "text": "Yo soy el que me ha hecho tanto daño\ny lo he querido así, sin medidas.\nEs verdad que no puedo vivir sin ti,\nsi tú estás conmigo y yo estoy contigo\npero no te olvides de mí, si ya nunca más vuelvas a quererme.\nPorque sé que mi vida cambiará al día siguiente por un adiós\nque jamás podrás olvidar, amor mío, cuando tu fuiste mía.\nSi en vez de estar enamorado voy a morir lentamente,\nporque es muy difícil seguir amando como antes había sido hasta ahora.\nY pensar que fui capaz de hacer algo tan grande para amarte otra vez.\nNo importa qué pasará después?, si la distancia se va haciendo mas larga...\nPero dime cuál será nuestro destino final,\nyo seré quien decida dónde nos iremos esta noche a soñar.<eos>"
+        "id": "008e34a9e1e543c6addec620ef3783f3",
+        "title": "Chaqueño Palavecino",
+        "text": "Por el camino de las estrellas\nyo voy sintiendo que me va.\nY cuando siento su mano en mi cintura,\nno puedo evitar sentir sus manos recorriéndome la espalda.\nMe da miedo tenerle cerca y no poderlo olvidar.\nSi pudiera llegar hasta él para besarle con locura,\npero si se le diera por volver a quererme,\npara qué quiero tanto amor?\nPorque yo sé bien lo que siente al besar sus labios rojos míos,\nporque yo sé bien que es imposible olvidarla nunca más.<eos>"
       },
       {
-        "id": "b481f8ab2901333085026a8884622a57",
-        "title": "Sabroso",
-        "text": "Si te vas de mí\nyo no sé cómo olvidarte,\nsi me dejas que siga llorando.\nPorque a mi lado estás tú\ny el mundo es una pared.\nTe has convertido en un objeto para ti y nada más.\n\nY ahora yo estoy enamorado de tu amor\nque nunca se olvida,\nme dices la verdad por favor.\nPero si ya no puedo vivir sin verte feliz\nte juro que este momento va terminar.\n\nCuando te vi partir fue como si fuera ayer\nun sueño que nunca llegó ni siquiera al corazón.\nSe apagó todo lo demás cuando estaba lejos de ti.\nNo supe valorar lo mucho que fui capaz hasta ese día\nde ser feliz, pero después de haberte amado tanto...<eos>"
+        "id": "7eac6ec4c05d95274ae1084e691db8a3",
+        "title": "Chaqueño Palavecino",
+        "text": "Me gusta la gente cuando se habla\nde su amor, de sus amores.\nPor eso siempre me pregunto:\n¿quién será? ¿Quién es?\nY si en el fondo del alma\nsiente un rumor que crece dentro mío;\nme voy a enamorar sin querer;\ny aunque no quiera yo le daré mi corazón;\nen cambio hoy pienso otra cosa más mía...\nMi vida comienza con los años veinte y treinta\nporque tengo una novia nueva y otro muchacho nuevo;\nmi vida empieza también para mí.<eos>"
       },
       {
-        "id": "81bc54ec124e155746920dd6b04dfefb",
-        "title": "Sabroso",
-        "text": "Tú me abandonaste, tú te marchaste de mí\nme dejaste solo en mi cama y no volviste a saber nada.\nMe dejaste sola con la soledad que hoy me deja sin voz,\ny ya no tengo palabras para decirte adiós.\nYo sé que nunca volverás, pero yo sigo estando lejos\nde ti, de nadie más.\nY aunque tu cariño sigue siendo el mismo, no podré olvidarte jamás.\nEs posible que comprendas cuánto he sufrido por lo nuestro\nque hemos perdido tanto amor.\nNo quiero ser un ladrón como otros tantos ladrones\npero soy capaz de hacer daño cuando se quiere herir\naunque sea muy tarde para robar.<eos>"
+        "id": "251962f05af9992059fce5884b68266c",
+        "title": "Chaqueño Palavecino",
+        "text": "A veces, cuando te busco\nTe quiero tanto que no puedo olvidarte.\nYo sé que es imposible quererte como a nadie\nPero me falta el amor de una vez por todas:\nPara qué volverte loco si hasta ayer era yo tu dueño;\npara qué seguir amando así?\n\nSi pudiera saber lo mucho que te amo\nNo se porqué me das un corazón tan grande\nComo un cielo sin estrellas ni lunas ni luna...\nsi pudiera sabría cómo amarte mi vida entera\nY eso sería todo para ti, nada más!<eos>"
       },
       {
-        "id": "b0180fb9599735d9d2a5337aabeb94fc",
-        "title": "Sabroso",
-        "text": "El amor no es un secreto\nsino una verdad.\nLa mujer que amé siempre me quiso,\nel hombre de mi vida se enamoró perdidamente\ny fue por eso que ahora estoy aquí para ti.\nYo sé bien lo que haces cuando estás a tu lado,\npero tú eres todo en ella\ny yo te quiero sólo a ti.\nY si el mundo da vueltas y más vueltas\npor qué será? ¿Porqué sufrirá la muerte si yo vivo sin tu cariño?\nPorque al fin podré vivir feliz sabiendo que nunca he sido tuyo\nporque ya nada importa si hay otro ser querido o amado.<eos>"
+        "id": "574f503449b863a72e192171a898af6a",
+        "title": "Chaqueño Palavecino",
+        "text": "Que el tiempo de los años\nse hace viejo en las noches\ny el invierno se ha vuelto gris.\nCuando el sol va a despertar,\nno sé si llueve o es que la vida ya no da más\nque una sola gota muere al nacer\ndejándome solo sin tu amor.<eos>"
       },
       {
-        "id": "4a50e3d5d02ba94178b4673d389b2a6d",
-        "title": "Sabroso",
-        "text": "Si supieras que te amo,\nque me muero por tenerte junto a mí.\nQue no puedo dejar de pensar en ti cada día más.\nY es tan intenso el amor entre nuestros cuerpos,\nme quema y se hace realidad.\nCada noche más y más cuando estoy contigo,\ny ya no estás aquí para amarte como lo hago yo ahora.\nEstoy desesperado porque tú estas conmigo,\nya no tengo otra oportunidad de vivir si tú eres mía.\nMe muero por tenerte cerca de mi vida,\npero no encuentro la manera.\nYo solo quiero tu calor,\ntú sabes bien que yo también soy tuyo.\nTe he visto sonreír sin decir una palabra,\ntu sonrisa ha vuelto loca al verte pasar.\nEres todo un sueño volver a sentirte así.\nQuiero besarte toda la piel,\nquiero olvidarme del mundo pero no vivo con vos.\nHoy siento que ya no hay nadie aquí en este momento,\nsino alguien aquí sentado frente a mí.<eos>"
+        "id": "20109af24bc45663ccbcc1d1f13f13aa",
+        "title": "Chaqueño Palavecino",
+        "text": "No se puede negar que soy\ncomo el resto de la tierra, como la raíz del viento.\nMe han dicho los ríos: \"que es más fácil encontrar un amor\".\nSi te digo no me dejes engañar.\nY si lo intento yo sé muy bien por qué será.\nYo tengo mi destino y en él estoy pensando.\nPor eso cuando escucho silbar al sol\nme parece escuchar una canción.\nDe las mil ciudades hay muchos lugares;\ny a veces oigo cantar a sus dioses.<eos>"
       },
       {
-        "id": "61b7953dbf57035927db9e8b5a258f7b",
-        "title": "Sabroso",
-        "text": "Yo no sé si te quiero\nyo ya no me siento así, solo y sin ti.\nEs que yo se muy bien contigo\nes por eso que hoy vivo en un mundo diferente a como lo viví ayer\nque tú fuiste mía para siempre.\nY ahora estoy pensando,\nqué será de mi vida después del amor.\nQue fue tan feliz nuestro amor es algo mucho más profundo\ny aún tengo tu recuerdo aquí, junto al mar, en mis brazos.\nEnamorado está este momento,\nya nunca podré olvidarte.<eos>"
+        "id": "3df25f67421e0cf9e5dde93648bad060",
+        "title": "Chaqueño Palavecino",
+        "text": "Si pudiera saber\nsi el alma se me iba\ny no tenía dónde ir.\nYo quisiera ser como soy,\npara poderte amar sin temor\npor eso te quiero tanto:\ncomo nunca he amado a nadie igual;\nno sé si tú también lo serás?\n\nNo hay que dudar de este amor\nporque yo puedo quererte más todavía;\nni aunque sea sólo una vez\nyo jamás podría olvidar tu boca,\ntu cuerpo y la forma en que tus manos acariciaban mi piel.<eos>"
       },
       {
-        "id": "40c2ed598c589fe46a1de02566f56f43",
-        "title": "Sabroso",
-        "text": "La primera vez que te vi\nme enamoré y no lo pude evitar,\npero hoy quiero estar a tu lado otra noche.\nY ahora qué puedo hacer?\nSimplemente dime si me amas como yo pensaba antes de conocerte,\ny por eso me siento tan feliz contigo cada día más.\n\nNo sé cómo explicarte mi error,\nsi tú quieres ser la mujer perfecta para mí,\nyo tengo el corazón muy loco por ti, pero en realidad no soy nada tuyo.\nYo no se ni siquiera cuando te conocí,\nno se porque ya sabes que nunca fui un tonto enamorado,\naunque sea mentira todo es verdad.\nQue me estoy muriendo sin tenerte cerca y decirte cosas bonitas\ncomo hacerte daño con tus besos, o darte hasta morir.\nPero hoy necesito saber si te amo tal cual eres,\nque te extraño tanto... y que no entiendo porqué no estas aquí conmigo,\nsolo una amiga mía ha venido a molestarte.\nMe muero de ganas de amarte tanto así.\nPorque nadie puede querernos igual,\nporque todos los demás somos diferentes,\nsólo nosotros dos.\nSólo ellos tres.<eos>"
+        "id": "1f8cc0e38386e1cfec10a4610a0bb80e",
+        "title": "Chaqueño Palavecino",
+        "text": "En el alma de mi pueblo\nyo he visto nacer la primavera.\nSoy un canto en pena,\nde esos que nunca se olvidan\nque no hay quien lo aguante\nsi es que a mí me gusta cantar.\nMi vida ha cambiado y ya ves\ntodo está distinto: te quiero volver...\nY aunque estoy muy lejos,\nmi camino comienza a andar;\nno sé si será mañana cuando yo vuelva...<eos>"
       }
     ]
   }

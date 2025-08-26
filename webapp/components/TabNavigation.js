@@ -13,6 +13,11 @@ export default {
                     class="flex-1 px-4 py-2 rounded-md text-base font-medium transition-colors duration-200">
                 Estadísticas Globales
             </button>
+            <button @click="$emit('update:activeTab', 'dataset')"
+                    :class="{'bg-indigo-600 text-white shadow-md': activeTab === 'dataset', 'bg-white text-gray-700': activeTab !== 'dataset'}"
+                    class="flex-1 px-4 py-2 rounded-md text-base font-medium transition-colors duration-200">
+                Explorar Dataset
+            </button>
         </div>
     `
 };
