@@ -11,7 +11,7 @@ const routes = [
         redirect: '/estadisticas'
     },
     {
-        path: '/estadisticas/:slug?/:id?',
+        path: '/estadisticas/:slug?/:index?',
         name: 'estadisticas',
         component: EstadisticasView,
         props: true

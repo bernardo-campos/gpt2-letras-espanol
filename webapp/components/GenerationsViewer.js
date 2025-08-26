@@ -2,16 +2,17 @@
 const { ref, computed, watch, onMounted } = Vue;
 
 export default {
-    props: ['generations', 'frequentWords', 'artistName', 'initialGenerationId'],
+    props: ['generations', 'frequentWords', 'artistName', 'initialGenerationIndex'],
     setup(props) {
         const currentGenerationIndex = ref(0);
         const selectedFrequentWords = ref([]);
 
-        const setGenerationById = (id) => {
-            if (!id || !props.generations) return;
-            const index = props.generations.findIndex(gen => gen.id === id);
-            if (index !== -1) {
-                currentGenerationIndex.value = index;
+        const setGenerationByIndex = (index) => {
+            if (!index || !props.generations) return;
+            // Convertir el índice 1-based de la URL a 0-based para el array
+            const targetIndex = index - 1;
+            if (targetIndex >= 0 && targetIndex < props.generations.length) {
+                currentGenerationIndex.value = targetIndex;
             }
         };
 
@@ -53,18 +54,18 @@ export default {
             selectedFrequentWords.value = [];
         });
 
-        watch(() => props.initialGenerationId, (newId) => {
-            setGenerationById(newId);
+        watch(() => props.initialGenerationIndex, (newIndex) => {
+            setGenerationByIndex(newIndex);
         });
 
         onMounted(() => {
-             setGenerationById(props.initialGenerationId);
+             setGenerationByIndex(props.initialGenerationIndex);
         });
 
         return { currentGenerationIndex, selectedFrequentWords, currentGeneration, mostFrequentWordsForHighlight, highlightText, toggleWordSelection, prevGeneration, nextGeneration };
     },
     template: `
-        <div class="mt-8 bg-gray-50 p-6 rounded-lg shadow-inner border border-gray-200">
+        <div class="bg-gray-50 p-6 rounded-lg shadow-inner border border-gray-200">
             <h2 class="text-2xl font-bold text-indigo-600 mb-4">Generaciones con IA para {{ artistName }}</h2>
             <div v-if="generations && generations.length > 0">
                 <div class="mb-4 flex flex-wrap gap-2 items-center">

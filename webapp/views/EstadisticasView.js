@@ -7,7 +7,7 @@ const { ref, computed, inject } = Vue;
 
 export default {
     components: { ArtistStatsPanel, WordsTable, GenerationsViewer },
-    props: ['slug', 'id'],
+    props: ['slug', 'index'],
     setup(props) {
         const artistData = inject('artistData');
         const artists = inject('artists');
@@ -26,10 +26,23 @@ export default {
         const artistName = computed(() => getArtistNameFromSlug(props.slug));
         const selectedArtistData = computed(() => artistData.value ? artistData.value[artistName.value] : null);
 
-        return { artistName, selectedArtistData, wordsToShowCount };
+        return {
+            artistName,
+            selectedArtistData,
+            wordsToShowCount,
+            initialGenerationIndex: computed(() => props.index ? parseInt(props.index, 10) : null)
+        };
     },
     template: `
         <div v-if="selectedArtistData">
+            <generations-viewer
+                :generations="selectedArtistData.generations"
+                :frequent-words="selectedArtistData.words"
+                :artist-name="artistName"
+                :initial-generation-index="initialGenerationIndex"
+                class="mb-8"
+            ></generations-viewer>
+
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
                 <artist-stats-panel :artist-name="artistName" :stats="selectedArtistData.stats"></artist-stats-panel>
                 <words-table
@@ -38,12 +51,6 @@ export default {
                     v-model:words-to-show="wordsToShowCount"
                 ></words-table>
             </div>
-            <generations-viewer
-                :generations="selectedArtistData.generations"
-                :frequent-words="selectedArtistData.words"
-                :artist-name="artistName"
-                :initial-generation-id="id"
-            ></generations-viewer>
         </div>
         <div v-else class="text-center text-gray-500 pt-10">
             Selecciona un artista.
