@@ -27,9 +27,6 @@ export default {
                 const response = await fetch('artist_analysis_data.json');
                 if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
                 artistData.value = await response.json();
-                if (artists.value.length > 0 && !selectedArtist.value) {
-                    selectedArtist.value = artists.value[0];
-                }
             } catch (e) {
                 error.value = e.message;
             } finally {
@@ -52,7 +49,7 @@ export default {
 
         // --- Watchers ---
         watch(selectedArtist, (newArtist) => {
-            if (!newArtist || !route.params.slug) return;
+            if (!newArtist || !showArtistSelector.value) return;
             const newSlug = getSlug(newArtist);
             if (newSlug !== route.params.slug) {
                 router.push({ name: route.name, params: { ...route.params, slug: newSlug } });
@@ -60,7 +57,26 @@ export default {
         });
 
         // --- Lifecycle Hooks ---
-        onMounted(loadArtistData);
+        onMounted(async () => {
+            await loadArtistData();
+
+            // Lógica de selección de artista que prioriza la URL
+            const slugFromUrl = route.params.slug;
+            const artistFromSlug = artists.value.find(name => getSlug(name) === slugFromUrl);
+
+            if (artistFromSlug) {
+                // Si la URL contiene un slug válido, se establece ese artista
+                selectedArtist.value = artistFromSlug;
+            } else if (artists.value.length > 0) {
+                // Si no, se establece el primer artista como defecto
+                const defaultArtist = artists.value[0];
+                selectedArtist.value = defaultArtist;
+                // Y se actualiza la URL para que sea consistente (si la vista lo requiere)
+                if (showArtistSelector.value) {
+                    router.replace({ params: { ...route.params, slug: getSlug(defaultArtist) } });
+                }
+            }
+        });
 
         return {
             loading,
