@@ -1,0 +1,35 @@
+name: Deploy to GitHub Pages
+
+on:
+  # Se ejecuta cada vez que se hace un push a la rama "main"
+  push:
+    branches:
+      - main
+  # Permite ejecutar este workflow manualmente desde la pestaña Actions
+  workflow_dispatch:
+
+# Permite que el job tenga permisos para clonar el repo y hacer el deploy
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        # Esto sube el contenido de la carpeta /webapp como un artefacto
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './webapp' # Carpeta a publicar
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
