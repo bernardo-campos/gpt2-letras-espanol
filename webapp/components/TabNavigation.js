@@ -22,6 +22,11 @@ export default {
                class="flex items-center justify-center flex-1 text-center px-4 py-2 rounded-md text-base font-medium transition-colors duration-200 no-underline">
                 Explorar dataset
             </router-link>
+            <router-link :to="{ name: 'generar-letra' }"
+               :class="{'bg-indigo-600 text-white shadow-md': activeTab === 'generar-letra', 'bg-white text-gray-700': activeTab !== 'generar-letra'}"
+               class="flex items-center justify-center flex-1 text-center px-4 py-2 rounded-md text-base font-medium transition-colors duration-200 no-underline">
+                Generar letra
+            </router-link>
         </div>
     `
 };

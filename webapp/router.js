@@ -2,6 +2,7 @@ import HomeView from './views/HomeView.js';
 import EstadisticasView from './views/EstadisticasView.js';
 import GlobalesView from './views/GlobalesView.js';
 import DatasetView from './views/DatasetView.js';
+import GenerarLetraView from './views/GenerarLetraView.js';
 
 // VueRouter está disponible globalmente
 const { createRouter, createWebHashHistory } = VueRouter;
@@ -28,6 +29,11 @@ const routes = [
         name: 'dataset',
         component: DatasetView,
         props: true
+    },
+    {
+        path: '/generar-letra',
+        name: 'generar-letra',
+        component: GenerarLetraView
     }
 ];
 

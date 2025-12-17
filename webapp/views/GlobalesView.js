@@ -1,11 +1,10 @@
-import GlobalStatsTable from '../components/GlobalStatsTable.js';
 import GlobalFrequentWordsTable from '../components/GlobalFrequentWordsTable.js';
 
 // Vue está disponible globalmente
 const { computed, inject } = Vue;
 
 export default {
-    components: { GlobalStatsTable, GlobalFrequentWordsTable },
+    components: { GlobalFrequentWordsTable },
     setup() {
         const artistData = inject('artistData');
 
@@ -27,9 +26,8 @@ export default {
     },
     template: `
         <div class="bg-gray-50 p-6 rounded-lg shadow-inner border border-gray-200">
-            <h2 class="text-2xl font-bold text-indigo-600 mb-6">Estadísticas Globales por Artista</h2>
-            <global-stats-table :stats="globalArtistStats"></global-stats-table>
-            <global-frequent-words-table :words-by-artist="globalFrequentWords"></global-frequent-words-table>
+            <h2 class="text-2xl font-bold text-indigo-600 mb-6">Estadísticas por Artista</h2>
+            <global-frequent-words-table :words-by-artist="globalFrequentWords" :stats="globalArtistStats"></global-frequent-words-table>
         </div>
     `
 };
