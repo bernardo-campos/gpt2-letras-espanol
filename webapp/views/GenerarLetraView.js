@@ -1,33 +1,18 @@
-const { ref, inject, computed, onMounted } = Vue;
+const { ref, inject, computed } = Vue;
 
 export default {
     setup() {
         const artists = inject('artists');
+        const isAvailable = inject('isAvailable');
+        const checkingAvailability = inject('checkingAvailability');
+        const spaceId = inject('spaceId');
+
         const model_choice = ref('GPT2 Fine-Tuned (bernardoc90/gpt2-spanish-lyrics)');
         const selected_artist = ref('');
         const initial_prompt = ref('');
         const generated_result = ref(null);
         const loading = ref(false);
         const error = ref(null);
-        
-        const isAvailable = ref(false);
-        const checkingAvailability = ref(true);
-        const spaceId = "bernardoc90/gpt-spanish-lyrics";
-
-        const isSpaceAvailable = async (spaceId) => {
-            try {
-                const { Client } = await import("https://cdn.jsdelivr.net/npm/@gradio/client/dist/index.min.js");
-                const client = await Client.connect(spaceId);
-                return true;
-            } catch (err) {
-                return false;
-            }
-        };
-
-        onMounted(async () => {
-            isAvailable.value = await isSpaceAvailable(spaceId);
-            checkingAvailability.value = false;
-        });
 
         const formattedResult = computed(() => {
             if (generated_result.value && Array.isArray(generated_result.value) && generated_result.value.length === 1) {

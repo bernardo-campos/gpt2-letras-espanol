@@ -15,6 +15,11 @@ export default {
         const error = ref(null);
         const selectedArtist = ref('');
 
+        // --- Space Availability State ---
+        const isAvailable = ref(false);
+        const checkingAvailability = ref(true);
+        const spaceId = "bernardoc90/gpt-spanish-lyrics";
+
         const route = useRoute();
         const router = useRouter();
 
@@ -34,6 +39,18 @@ export default {
             }
         };
 
+        const checkSpaceAvailability = async () => {
+            try {
+                const { Client } = await import("https://cdn.jsdelivr.net/npm/@gradio/client/dist/index.min.js");
+                const client = await Client.connect(spaceId);
+                isAvailable.value = true;
+            } catch (err) {
+                isAvailable.value = false;
+            } finally {
+                checkingAvailability.value = false;
+            }
+        };
+
         // --- Computed Properties ---
         const artists = computed(() => artistData.value ? Object.keys(artistData.value).sort((a, b) => a.localeCompare(b)) : []);
         const activeTab = computed(() => route.name);
@@ -46,6 +63,9 @@ export default {
         provide('error', error);
         provide('artists', artists);
         provide('getSlug', getSlug);
+        provide('isAvailable', isAvailable);
+        provide('checkingAvailability', checkingAvailability);
+        provide('spaceId', spaceId);
 
         // --- Watchers ---
         watch(selectedArtist, (newArtist) => {
@@ -58,6 +78,9 @@ export default {
 
         // --- Lifecycle Hooks ---
         onMounted(async () => {
+            // Iniciar chequeo de disponibilidad en paralelo
+            checkSpaceAvailability();
+
             await loadArtistData();
 
             // Lógica de selección de artista que prioriza la URL
